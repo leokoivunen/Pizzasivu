@@ -7778,8 +7778,8 @@ h1, h2, h3, h4, h5,
         height: 300px; } }
 
 .ftco-services {
-  background: url(../images/food.png) repeat;
-  color: #5c3d03; }
+  background-color: #000000;
+  color: white; }
   .ftco-services .overlay {
     position: absolute;
     top: 0;
@@ -7787,7 +7787,6 @@ h1, h2, h3, h4, h5,
     left: 0;
     right: 0;
     content: '';
-    background: #fac564;
     opacity: 0; }
   .ftco-services .heading-section h2 {
     color: black; }
