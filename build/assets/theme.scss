@@ -1,0 +1,168 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url(bg_4.jpg);
+  font-family: "Arial", sans-serif;
+}
+
+.container {
+  width: 100%;
+
+  .builder {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    .img-container {
+      float: left;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .info-container {
+      width: 50%;
+      padding: 0.5rem 2rem;
+      float: right;
+
+      h1 {
+        color: #fac564;
+      }
+
+      p {
+        color: white;
+        font-weight: bold;
+      }
+
+      .build-process {
+        padding: 2rem 1rem;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.281);
+        width: inherit;
+
+        .flex {
+          display: flex;
+          justify-content: flex-start;
+          .koko-container {
+            margin: 0 1rem;
+            h2 {
+              font-weight: normal;
+              font-size: 1.3rem;
+              text-align: left;
+              color: white;
+            }
+
+            select {
+              width: 10rem;
+              background-color: #d8a547;
+              border: solid 0.1rem black;
+              color: white;
+              border: none;
+              padding: 0.5rem;
+              font-weight: bold;
+            }
+          }
+
+          .pohja-container {
+            margin: 0 1rem;
+
+            h2 {
+              font-weight: normal;
+              font-size: 1.3rem;
+              text-align: left;
+              color: white;
+            }
+
+            select {
+              width: 10rem;
+              background-color: #d8a547;
+              border: solid 0.1rem black;
+              color: white;
+              border: none;
+              padding: 0.5rem;
+              font-weight: bold;
+            }
+          }
+        }
+        .taytteet-container {
+          margin: 3rem 1rem;
+          h2 {
+            font-weight: normal;
+            font-size: 1.3rem;
+            text-align: left;
+            color: white;
+          }
+
+          h3 {
+            font-weight: normal;
+            font-size: 1rem;
+            text-align: left;
+            color: white;
+          }
+
+          .select-taytteet {
+            span {
+              font-weight: normal;
+              font-size: 1.15rem;
+              text-align: left;
+              color: white;
+            }
+            ol {
+              li {
+                color: white;
+              }
+            }
+          }
+        }
+
+        .kastike-container {
+          margin: 3rem 1rem;
+          h2 {
+            font-weight: normal;
+            font-size: 1.3rem;
+            text-align: left;
+            color: white;
+          }
+
+          h3 {
+            font-weight: normal;
+            font-size: 1rem;
+            text-align: left;
+            color: white;
+          }
+
+          .select-kastikkeet {
+            span {
+              font-weight: normal;
+              font-size: 1.15rem;
+              text-align: left;
+              color: white;
+            }
+            ol {
+              li {
+                color: white;
+              }
+            }
+          }
+        }
+
+        a {
+          color: white;
+          text-decoration: none;
+          margin: 2rem 1rem;
+          padding: 1rem 1.5rem;
+          background-color: #c0923b;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    .builder {
+      flex-direction: column;
+    }
+  }
+}
