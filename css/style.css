@@ -9,7 +9,7 @@
   font-size: 1.3rem !important;
 }
 
-.active {
+nav .active {
   color: #f0bd61 !important;
 }
 
@@ -607,6 +607,8 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+}
+.center1 {
   text-align: center;
 }
 @media (min-width: 576px) {
@@ -644,6 +646,7 @@ pre code {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  margin-top: 0rem;
   margin-right: -15px;
   margin-left: -15px;
 }
