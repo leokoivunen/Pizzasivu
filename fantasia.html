@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Netmor - Yhteystiedot</title>
-    <link rel="shortcut icon" type="image/png" href="pizza.png" />
+    <title>Netmor - Kokoapizza</title>
+    <link rel="shortcut icon" type="image/png" href="images/pizza.png" />
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do" rel="stylesheet" />
@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/flaticon.css" />
     <link rel="stylesheet" href="css/icomoon.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/build.css" />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
@@ -22,79 +23,83 @@
           <small style="color: white; font-size: 1.3rem">Netmor</small>
           <small>Pizza</small>
         </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#ftco-nav"
-          aria-controls="ftco-nav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="oi oi-menu"></span> Menu
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span>
         </button>
         <div class="collapse navbar-collapse" id="ftco-nav">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active"><a href="index.html" class="nav-link">Etusivu</a></li>
-            <li class="nav-item"><a href="menu.html" class="nav-link">Ruokalista</a></li>
-            <li class="nav-item"><a href="build.html" class="nav-link">Kokoapizza</a></li>
-            <li class="nav-item"><a href="about.html" class="nav-link">Yritys</a></li>
-            <li class="nav-item"><a href="contact.html" class="nav-link active">Yhteystiedot</a></li>
+            <li class="nav-item"><a href="index.html" class="nav-link">Etusivu</a></li>
+            <li class="nav-item"><a href="ruokalista.html" class="nav-link">Ruokalista</a></li>
+            <li class="nav-item"><a href="fantasia.html" class="nav-link active">Kokoapizza</a></li>
+            <li class="nav-item"><a href="yritys.html" class="nav-link">Yritys</a></li>
+            <li class="nav-item"><a href="yhteystiedot.html" class="nav-link">Yhteystiedot</a></li>
           </ul>
         </div>
       </div>
     </nav>
-    <!-- END nav -->
-    <section class="ftco-section contact-section">
+
+    <section id="process" class="ftco-section contact-section">
       <div class="container mt-5">
         <div class="row block-9">
           <div class="col-md-4 contact-info ftco-animate">
-            <div class="row">
-              <div class="col-md-12 mb-4">
-                <h2 class="h4">Yhteystiedot</h2>
-              </div>
-              <div class="col-md-12 mb-3">
-                <p><span>Osoite:</span> Kerava, Finland</p>
-              </div>
-              <div class="col-md-12 mb-3">
-                <p><span>Puhelin:</span> <a href="tel://1234567920">+358 0000000</a></p>
-              </div>
-              <div class="col-md-12 mb-3">
-                <p><span>Sähköposti:</span> <a href="mailto:info@yoursite.com">esimerkki@gmail.com</a></p>
-              </div>
-            </div>
+            <h1>FANTASIA PIZZA</h1>
+            <p>Fantasia pizza. Valitse täytteet oman makusi mukaan.</p>
+            <img src="img/slider/4.jpg" alt="" />
           </div>
           <div class="col-md-1"></div>
           <div class="col-md-6 ftco-animate">
-            <form action="#" class="contact-form">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Nimi" />
+            <div class="build-process">
+              <div class="flex">
+                <div class="pohja-container">
+                  <h2>VALITSE POHJA</h2>
+                  <div class="select-wrapper">
+                    <select id="pohja">
+                      <option value="medium">Normaali</option>
+                      <option value="extralarge">Gluteeniton</option>
+                    </select>
                   </div>
                 </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Sähköposti" />
+                <div class="kastike-container">
+                  <h2>VALITSE KASTIKE</h2>
+                  <div class="select-kastikkeet">
+                    <span>KASTIKKEET:</span>
+                    <ol>
+                      <li><input type="checkbox" /> valkosipuli</li>
+                    </ol>
+                  </div>
+                </div>
+
+                <div class="taytteet-container">
+                  <h2>VALITSE TÄYTTEET</h2>
+                  <div class="select-taytteet">
+                    <span>TÄYTTEET:</span>
+                    <ol>
+                      <li><input type="checkbox" /> kinkku</li>
+                      <li><input type="checkbox" /> ananas</li>
+                      <li><input type="checkbox" /> pepperoni</li>
+                      <li><input type="checkbox" /> salami</li>
+                      <li><input type="checkbox" /> kana</li>
+                      <li><input type="checkbox" /> juusto</li>
+                    </ol>
                   </div>
                 </div>
               </div>
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Aihe" />
-              </div>
-              <div class="form-group">
-                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Viesti"></textarea>
-              </div>
-              <div class="form-group">
-                <input type="submit" value="Lähetä" class="btn btn-primary py-3 px-5" />
-              </div>
-            </form>
+              <a href="#" onclick="askUser()" class="btn btn-primary">LISÄÄ TILAUKSEEN</a>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <div id="map"></div>
+    <section id="popup">
+      <div class="top-i">
+        <h1>Haluatko kuljetuksen vai tuletko noutaa pizzan?</h1>
+      </div>
+      <div class="bottom-action">
+        <a href="#" class="btn btn-primary">Nouto</a>
+        <a href="#" onclick="getOrderDetails()" class="btn btn-secondary">Kuljetus</a>
+      </div>
+    </section>
 
     <footer class="ftco-footer ftco-section img">
       <div class="overlay"></div>
@@ -148,7 +153,6 @@
       </div>
     </footer>
 
-    <!-- loader -->
     <div id="ftco-loader" class="show fullscreen">
       <svg class="circular" width="48px" height="48px">
         <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
@@ -156,6 +160,7 @@
       </svg>
     </div>
 
+    <script src="js/fantasia.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
     <script src="js/jquery.waypoints.min.js"></script>

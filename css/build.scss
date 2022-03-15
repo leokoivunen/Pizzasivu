@@ -74,7 +74,9 @@
   }
 
   .kastike-container {
+    margin: 2rem 0;
     h2 {
+      font-size: 1.4rem;
     }
 
     .select-kastikkeet {
@@ -87,5 +89,24 @@
         }
       }
     }
+  }
+}
+
+#popup {
+  display: none;
+  width: 40rem;
+  padding: 3rem;
+  border-radius: 1.5rem;
+  margin: 0 auto;
+
+  .top-i {
+    h1 {
+      text-align: center;
+    }
+  }
+
+  .bottom-action {
+    display: flex;
+    justify-content: center;
   }
 }
