@@ -62,7 +62,7 @@
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active"><a href="index.html" class="nav-link">Etusivu</a></li>
             <li class="nav-item"><a href="menu.html" class="nav-link">Ruokalista</a></li>
-            <li class="nav-item"><a href="build/build.html" target="_blank" rel="noopener noreferrer" class="nav-link active">Kokoapizza</a></li>
+            <li class="nav-item"><a href="build.html" class="nav-link active">Kokoapizza</a></li>
             <li class="nav-item"><a href="about.html" class="nav-link">Yritys</a></li>
             <li class="nav-item"><a href="contact.html" class="nav-link">Yhteystiedot</a></li>
           </ul>
@@ -73,47 +73,70 @@
     <section class="ftco-section contact-section">
       <div class="container mt-5">
         <div class="row block-9">
-          <div class="col-md-4 contact-info ftco-animate">
-            <div class="row">
-              <div class="col-md-12 mb-4">
-                <h2 class="h4">Yhteystiedot</h2>
-              </div>
-              <div class="col-md-12 mb-3">
-                <p><span>Osoite:</span> Kerava, Finland</p>
-              </div>
-              <div class="col-md-12 mb-3">
-                <p><span>Puhelin:</span> <a href="tel://1234567920">+358 0000000</a></p>
-              </div>
-              <div class="col-md-12 mb-3">
-                <p><span>Sähköposti:</span> <a href="mailto:info@yoursite.com">esimerkki@gmail.com</a></p>
-              </div>
-            </div>
+          <div class="col-md-5 contact-info ftco-animate">
+            <h1>LUO OMA PIZZA</h1>
+            <p>Unelmien pizza. Valitse täytteet oman makusi mukaan.</p>
           </div>
           <div class="col-md-1"></div>
           <div class="col-md-6 ftco-animate">
-            <form action="#" class="contact-form">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Nimi" />
+            <div class="build-process">
+              <div class="flex">
+                <div class="koko-container">
+                  <h2>VALITSE KOKO</h2>
+
+                  <div class="select-wrapper">
+                    <select id="koko">
+                      <option value="medium">M</option>
+                      <option value="large">L</option>
+                      <option value="extralarge">XL</option>
+                      <option value="extraextralarge">XXL</option>
+                    </select>
                   </div>
                 </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Sähköposti" />
-                  </div>
+
+                <div class="pohja-container">
+                  <h2>VALITSE POHJA</h2>
+                  <select id="pohja">
+                    <option value="medium">Normaali</option>
+                    <option value="large">Tomaattikastike</option>
+                    <option value="extralarge">Juustokastike</option>
+                  </select>
                 </div>
               </div>
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Aihe" />
+
+              <div class="taytteet-container">
+                <h2>VALITSE TÄYTTEET</h2>
+                <h3>Tuotteella täytyy olla vähintään 1 täyte</h3>
+
+                <div class="select-taytteet">
+                  <span>TÄYTTEET:</span>
+                  <ol>
+                    <li><input type="checkbox" /> kinkku</li>
+                    <li><input type="checkbox" /> kebabliha</li>
+                    <li><input type="checkbox" /> porsaanniska</li>
+                    <li><input type="checkbox" /> paahdettu pekoni</li>
+                    <li><input type="checkbox" /> pepperoni</li>
+                    <li><input type="checkbox" /> salami</li>
+                    <li><input type="checkbox" /> ananas</li>
+                  </ol>
+                </div>
               </div>
-              <div class="form-group">
-                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Viesti"></textarea>
+
+              <div class="kastike-container">
+                <h2>VIIMEISTELE KASTIKKEELLA</h2>
+                <h3>Paranna makuelämystäsi</h3>
+
+                <div class="select-kastikkeet">
+                  <span>KASTIKKEET:</span>
+                  <ol>
+                    <li><input type="checkbox" /> valkosipuli</li>
+                    <li><input type="checkbox" /> kebabliha</li>
+                  </ol>
+                </div>
               </div>
-              <div class="form-group">
-                <input type="submit" value="Lähetä" class="btn btn-primary py-3 px-5" />
-              </div>
-            </form>
+
+              <a href="#build">LISÄÄ TILAUKSEEN</a>
+            </div>
           </div>
         </div>
       </div>
