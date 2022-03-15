@@ -1,0 +1,92 @@
+.container {
+  .row {
+    .col-md-4 {
+      h1 {
+      }
+
+      p {
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.build-process {
+    margin: 2rem 0;
+  .flex {
+    .koko-container {
+      h2 {
+        font-size: 1.4rem;
+      }
+
+      .select-wrapper {
+        margin: 1rem 0;
+        #koko {
+          background-color: #fac564;
+          border: none;
+          padding: 0.2rem 0.5rem;
+          option {
+          }
+        }
+      }
+    }
+
+    .pohja-container {
+      h2 {
+        font-size: 1.4rem;
+      }
+
+      .select-wrapper {
+        margin: 1rem 0;
+        #pohja {
+          background-color: #fac564;
+          border: none;
+          padding: 0.2rem 0.5rem;
+          option {
+          }
+        }
+      }
+    }
+  }
+  .taytteet-container {
+    h2 {
+      font-size: 1.4rem;
+    }
+
+    h3 {
+      font-size: 1rem;
+    }
+
+    .select-taytteet {
+      margin: 1rem 0;
+
+      span {
+      }
+
+      ol {
+        li {
+          color: rgb(253, 237, 218);
+        }
+      }
+    }
+  }
+
+  .kastike-container {
+    h2 {
+    }
+
+    .select-kastikkeet {
+      span {
+      }
+
+      ol {
+        li {
+          color: #ffda95;
+        }
+      }
+    }
+  }
+}

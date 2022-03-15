@@ -1,0 +1,56 @@
+.container .row .col-md-4 img {
+  width: 100%;
+}
+
+.build-process {
+  margin: 2rem 0;
+}
+
+.build-process .flex .koko-container h2 {
+  font-size: 1.4rem;
+}
+
+.build-process .flex .koko-container .select-wrapper {
+  margin: 1rem 0;
+}
+
+.build-process .flex .koko-container .select-wrapper #koko {
+  background-color: #fac564;
+  border: none;
+  padding: 0.2rem 0.5rem;
+}
+
+.build-process .flex .pohja-container h2 {
+  font-size: 1.4rem;
+}
+
+.build-process .flex .pohja-container .select-wrapper {
+  margin: 1rem 0;
+}
+
+.build-process .flex .pohja-container .select-wrapper #pohja {
+  background-color: #fac564;
+  border: none;
+  padding: 0.2rem 0.5rem;
+}
+
+.build-process .taytteet-container h2 {
+  font-size: 1.4rem;
+}
+
+.build-process .taytteet-container h3 {
+  font-size: 1rem;
+}
+
+.build-process .taytteet-container .select-taytteet {
+  margin: 1rem 0;
+}
+
+.build-process .taytteet-container .select-taytteet ol li {
+  color: #fdedda;
+}
+
+.build-process .kastike-container .select-kastikkeet ol li {
+  color: #ffda95;
+}
+/*# sourceMappingURL=build.css.map */
