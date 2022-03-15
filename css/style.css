@@ -63,7 +63,16 @@ html {
   -ms-overflow-style: scrollbar;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-
+.registerbtn{
+  background: #fac564;
+  border: 1px solid #fac564;
+  color: #000;
+}
+.registerbtn:hover{
+  border: 1px solid #fac564;
+background: transparent !important;
+color: #fac564;
+}
 @-ms-viewport {
   width: device-width;
 }
@@ -598,6 +607,7 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  text-align: center;
 }
 @media (min-width: 576px) {
   .container {
@@ -9946,7 +9956,7 @@ h5,
 .btn:focus {
   outline: none;
 }
-.btn.btn-primary {
+.btn.btn-primary{
   background: #fac564;
   border: 1px solid #fac564;
   color: #000;
