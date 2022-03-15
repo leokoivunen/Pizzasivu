@@ -9,6 +9,10 @@
   font-size: 1.3rem !important;
 }
 
+.active {
+  color: #f0bd61 !important;
+}
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -7389,8 +7393,6 @@ h1, h2, h3, h4, h5,
       border: 1px solid #fac564; }
   .ftco-navbar-light .navbar-nav > .nav-item.cta.cta-colored span {
     border-color: #fac564; }
-  .ftco-navbar-light .navbar-nav > .nav-item.active > a {
-    color: #fac564; }
   .ftco-navbar-light .navbar-toggler {
     border: none;
     color: rgba(255, 255, 255, 0.8) !important;
