@@ -57,4 +57,25 @@
 .build-process .kastike-container .select-kastikkeet ol li {
   color: #ffda95;
 }
+
+#popup {
+  display: none;
+  width: 40rem;
+  padding: 3rem;
+  border-radius: 1.5rem;
+  margin: 0 auto;
+}
+
+#popup .top-i h1 {
+  text-align: center;
+}
+
+#popup .bottom-action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 /*# sourceMappingURL=build.css.map */
