@@ -46,6 +46,14 @@
   color: #fdedda;
 }
 
+.build-process .kastike-container {
+  margin: 2rem 0;
+}
+
+.build-process .kastike-container h2 {
+  font-size: 1.4rem;
+}
+
 .build-process .kastike-container .select-kastikkeet ol li {
   color: #ffda95;
 }
