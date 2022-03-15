@@ -608,6 +608,9 @@ pre code {
   margin-right: auto;
   margin-left: auto;
 }
+.center1 {
+  text-align: center;
+}
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
