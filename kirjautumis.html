@@ -7,16 +7,19 @@
     <title>Kirjautumis kaavake</title>
 </head>
 <style>
+body {font-family: Arial, Helvetica, sans-serif;}
+body {margin: 10px 100px 100px 100px;}
 button {color: rgb(90, 70, 70);}
 button {background-color: rgb(199, 190, 64);}
 button {border-radius: 7.5px;}
-form {text-align: center;}
-label {font-size:16pt;}
-label {color: black;}
-
-
+button {border-width:0px;}
+form {text-align:center;}
+b {font-size:100%;}
+::placeholder {color: black;}
+::placeholder {font-size:100%;}
+ a {padding: 15px;}
 </style>
-<body style>
+<body>
 <form action="action_page.php" method="post">
 
   
@@ -24,20 +27,21 @@ label {color: black;}
     <div class="container">
       <label for="uname"><b>Käyttäjä nimi</b></label>
       <input type="text" placeholder="Käyttäjä nimi" name="uname" required>
-  
-      <label for="psw"><b>Salasana</b></label>
+    
+      <span for="psw"><b>Salasana</b></span>
       <input type="password" placeholder="Anna Salasana" name="psw" required>
-  
-      <button type="submit">Login</button>
+  </div>
+      <div>
       <label>
         <input type="checkbox" checked="checked" name="remember"> Muista minut
       </label>
-    </div>
-  
+    </div> 
     <div class="container" style="background-color:white">
       <span class="psw">Unohditko <a href="#">Salasana?</a></span>
     </div>
-    
+<div class="kirjaudu">
+    <button type="submit" on><a>Kirjaudu</a></button>
+    </div>
   </form>
   </body>
   </html>
