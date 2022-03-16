@@ -70,8 +70,8 @@ html {
 }
 .registerbtn:hover{
   border: 1px solid #fac564;
-background: transparent !important;
-color: #fac564;
+  background: transparent !important;
+  color: #fac564;
 }
 @-ms-viewport {
   width: device-width;
