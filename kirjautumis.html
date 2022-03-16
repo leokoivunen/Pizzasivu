@@ -1,47 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8" />
+  <head>
+    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Kirjautumis kaavake</title>
-</head>
-<style>
-body {font-family: Arial, Helvetica, sans-serif;}
-body {margin: 10px 100px 100px 100px;}
-button {color: rgb(90, 70, 70);}
-button {background-color: rgb(199, 190, 64);}
-button {border-radius: 7.5px;}
-button {border-width:0px;}
-form {text-align:center;}
-b {font-size:100%;}
-::placeholder {color: black;}
-::placeholder {font-size:100%;}
- a {padding: 15px;}
-</style>
-<body>
-<form action="action_page.php" method="post">
+    <title>Netmor - Kirjaudu</title>
+    <link rel="shortcut icon" type="image/png" href="images/pizza.png" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do" rel="stylesheet" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/icomoon.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/ionicons.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css" />
+    <link rel="stylesheet" href="css/jquery.timepicker.css" />
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container center1">
+      <span class="flaticon-pizza-1 mr-1"></span>
+      <a class="navbar-brand" href="index.html">
+        <small style="color: white; font-size: 1.3rem">Netmor</small>
+        <small>Pizza</small>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a href="index.html" class="nav-link">Etusivu</a></li>
+          <li class="nav-item"><a href="ruokalista.html" class="nav-link">Ruokalista</a></li>
+          <li class="nav-item"><a href="fantasia.html" class="nav-link">Kokoapizza</a></li>
+          <li class="nav-item"><a href="yritys.html" class="nav-link">Yritys</a></li>
+          <li class="nav-item"><a href="yhteystiedot.html" class="nav-link">Yhteystiedot</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+<form>
+  <div>
   
 
     <div class="container">
-      <label for="uname"><b>Käyttäjä nimi</b></label>
-      <input type="text" placeholder="Käyttäjä nimi" name="uname" required>
-    
-      <span for="psw"><b>Salasana</b></span>
+      <h1>Kirjaudu</h1>
+      <br><label for="uname"><h5>Käyttäjä nimi</h5></label></br>
+      <input type="text" placeholder="Käyttäjä nimi" name="uname" required>   
+      <span for="psw"><h5>Salasana</h5></span>
       <input type="password" placeholder="Anna Salasana" name="psw" required>
-  </div>
-      <div>
-      <label>
-        <input type="checkbox" checked="checked" name="remember"> Muista minut
-      </label>
-    </div> 
-    <div class="container" style="background-color:white">
+      <br><label>
+        <input type="checkbox" checked="checked" name="remember"> <h5>Muista minut</h5>
+      </br></label>
+    <div class="container1" style="background-color: transparent">
       <span class="psw">Unohditko <a href="#">Salasana?</a></span>
     </div>
 <div class="kirjaudu">
-    <button type="submit" on><a>Kirjaudu</a></button>
+    <button type="submit" on><h5>Kirjaudu</h5></button>
+    <h5>Eikö sinulla ole vielä käyttäjää?<a href="rekisteröinti.html"> Luo käyttäjä</a></h5>
     </div>
+  </div>
+    <style>
+button {
+color: rgb(90, 70, 70);
+background-color: rgb(199, 190, 64);
+}
+.container {
+  text-align: center;
+}
+</style>
   </form>
-  </body>
+</section>
   </html>
