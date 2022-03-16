@@ -1,0 +1,47 @@
+.shopping-container {
+  display: none;
+  margin: 0 auto;
+  width: 100%;
+  padding: 5rem 0;
+}
+
+.shopping-container .wrapper {
+  background-color: rgba(0, 0, 0, 0.034);
+  padding: 1.05rem;
+  margin: 0 auto;
+  width: 40vw;
+}
+
+.shopping-container .wrapper .top-container h1 {
+  color: #fac564;
+  font-size: 2.25rem;
+}
+
+.shopping-container .wrapper .card-container .card {
+  margin: 1rem 0;
+  list-style-type: none;
+  border: solid 0.11rem rgba(255, 255, 255, 0.658);
+  background-color: transparent;
+}
+
+.shopping-container .wrapper .card-container .card #item {
+  margin: 0.5rem;
+}
+
+.shopping-container .wrapper .card-container .card #item #product,
+.shopping-container .wrapper .card-container .card #item #price,
+.shopping-container .wrapper .card-container .card #item #kpl {
+  color: #fac564;
+}
+
+.shopping-container .wrapper .bottom-container a {
+  margin: 1rem 0;
+  font-size: 1rem !important;
+  padding: 0.3rem 1.25rem !important;
+  color: #111111;
+}
+
+.shopping-container .wrapper .bottom-container a:hover {
+  color: white !important;
+}
+/*# sourceMappingURL=shopping.css.map */

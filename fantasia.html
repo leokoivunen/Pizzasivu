@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/build.css" />
+    <link rel="stylesheet" href="scss/shopping.css" />
+
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
@@ -39,11 +41,54 @@
             <li class="nav-item"><a href="ruokalista.html" class="nav-link">Ruokalista</a></li>
             <li class="nav-item"><a href="yritys.html" class="nav-link">Yritys</a></li>
             <li class="nav-item"><a href="yhteystiedot.html" class="nav-link">Yhteystiedot</a></li>
+            <li class="nav-item">
+              <a onclick="shoppingCartShow()" class="nav-link"> <span style="font-size: 1.65rem" class="icon-shopping-cart"></span> </a>
+            </li>
+            <script src="js/shopping-cart.js"></script>
+
           </ul>
         </div>
       </div>
     </nav>
+    <section class="shopping-container">
+      <div class="wrapper">
+        <div class="top-container">
+          <h1>
+            Ostoskori
+            <span style="font-size: 2rem; color: #fac564" class="icon-shopping-cart"></span>
+          </h1>
+        </div>
 
+        <div class="card-container">
+          <div class="card">
+            <li id="item">
+              <span id="product">Mexican</span>
+              (<span id="kpl">1</span>) - <span id="price">10</span>€
+              <span id="ingredients">Juusto, pepperonimakkara, ananas, jalapeno</span>
+            </li>
+          </div>
+          <div class="card">
+            <li id="item">
+              <span id="product">Mexican</span>
+              (<span id="kpl">2</span>) - <span id="price">10</span>€
+              <span id="ingredients">Juusto, pepperonimakkara, ananas, jalapeno</span>
+            </li>
+          </div>
+          <div class="card">
+            <li id="item">
+              <span id="product">Mexican</span>
+              (<span id="kpl">3</span>) - <span id="price">10</span>€
+              <span id="ingredients">Juusto, pepperonimakkara, ananas, jalapeno</span>
+            </li>
+          </div>
+        </div>
+
+        <div class="bottom-container">
+          <a href="#" class="btn btn-primary">Maksu</a>
+          <a href="index.html" class="btn btn-primary">Peruuta</a>
+        </div>
+      </div>
+    </section>
     <section id="process" class="ftco-section contact-section">
       <div class="container mt-5">
         <div class="row block-9">
@@ -107,10 +152,9 @@
       </div>
       <div class="bottom-form">
         <h3>Toimitusosoite:</h3>
-        <input type="text">
+        <input type="text" />
         <a href="ruokalista.html" class="btn btn-primary" onclick="closeForm()">Tilaa</a>
       </div>
-    
     </section>
 
     <footer class="ftco-footer ftco-section img">
