@@ -1,0 +1,212 @@
+.foodlist {
+  background-color: rgba(10, 10, 10, 0.925);
+  padding: 1rem;
+  margin: 0;
+}
+
+.foodlist .alignment {
+  margin: 2vw auto;
+  max-width: 69.2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.foodlist .alignment .col-1 {
+  background-color: rgba(4, 4, 4, 0.028);
+  z-index: 2;
+  float: left;
+  max-width: 85%;
+}
+
+.foodlist .alignment .col-1 .menu-container .list_ordered {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  list-style: none;
+}
+
+.foodlist .alignment .col-1 .menu-container .list_ordered .list_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.foodlist .alignment .col-1 .menu-container .list_ordered .list_item a {
+  text-decoration: none;
+  color: #ffdd9d;
+  margin: 0 0.15rem;
+  font-size: 1.1rem;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  background-color: #1a19176b;
+  border: solid 0.15rem #ffdd9d;
+  padding: 1rem;
+  -webkit-transition: 0.12s;
+  transition: 0.12s;
+}
+
+.foodlist .alignment .col-1 .menu-container .list_ordered .list_item .important {
+  background-color: #1a1917;
+  border: solid 0.3rem #1a191721;
+  -webkit-transition: 0.12s;
+  transition: 0.12s;
+}
+
+.foodlist .alignment .col-1 .menu-container .list_ordered .list_item a:hover {
+  -webkit-transition: 0.12s ease-in;
+  transition: 0.12s ease-in;
+  background-color: #1a1917;
+  border: solid 0.3rem #1a191721;
+}
+
+.foodlist .alignment .col-1 .menu-container .list_ordered .list_item a:focus {
+  background-color: #1a1917;
+  border: solid 0.3rem #1a191721;
+}
+
+.foodlist .alignment .col-1 .menu-container .food-container {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.foodlist .alignment .col-1 .menu-container .food-container .food_div {
+  max-width: 80%;
+  background-color: #8a79599f;
+  padding: 0.5rem;
+  border-radius: 8px;
+  margin: 0.4rem 0.15rem;
+}
+
+.foodlist .alignment .col-1 .menu-container .food-container .food_div .food_name {
+  font-size: 2rem;
+  color: white;
+}
+
+.foodlist .alignment .col-1 .menu-container .food-container .food_div .food_paragraph {
+  color: whitesmoke;
+  font-size: 1.3rem;
+}
+
+.foodlist .alignment .col-1 .menu-container .food-container .food_div .img_width {
+  float: right;
+  width: 20.1%;
+}
+
+.foodlist .alignment .col-1 .menu-container .food-container .food_div .food_price {
+  color: #ffdd9d;
+  font-size: 1.8rem;
+}
+
+.foodlist .alignment .col-1 .menu-container .food-container .food_div .currency {
+  color: #ffe7bc;
+  font-size: 1.8rem;
+}
+
+.foodlist .alignment .col-1 .menu-container .food-container .food_div .food_count {
+  color: #f8f4ed;
+  font-size: 1.4rem;
+}
+
+.foodlist .alignment .col-1 .menu-container .food-container .food_div .button {
+  text-decoration: none;
+  color: #ffdd9d;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  background-color: #1a19176b;
+  border: solid 0.15rem #5e5e5e29;
+  padding: 0.2rem 0.5rem;
+  -webkit-transition: 0.12s;
+  transition: 0.12s;
+}
+
+.foodlist .alignment .col-1 .menu-container .food-container .food_div .amount {
+  color: #ffdd9d;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  background-color: #1a19176b;
+  border: solid 0.15rem #5e5e5e29;
+  padding: 0.2rem 0.5rem;
+  -webkit-transition: 0.12s;
+  transition: 0.12s;
+  font-size: 1.07rem;
+  width: 4rem;
+}
+
+.foodlist .alignment .col-1 .menu-container .drinks-container {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.foodlist .alignment .col-1 .menu-container .drinks-container .food_div {
+  max-width: 80%;
+  background-color: #59888a9f;
+  padding: 0.5rem;
+  border-radius: 8px;
+  margin: 0.4rem 0.15rem;
+}
+
+.foodlist .alignment .col-1 .menu-container .drinks-container .food_div .food_name {
+  font-size: 2rem;
+  color: white;
+}
+
+.foodlist .alignment .col-1 .menu-container .drinks-container .food_div .food_paragraph {
+  color: whitesmoke;
+  font-size: 1.3rem;
+}
+
+.foodlist .alignment .col-1 .menu-container .drinks-container .food_div .img_width {
+  float: right;
+  width: 25.5%;
+}
+
+.foodlist .alignment .col-1 .menu-container .drinks-container .food_div .food_price {
+  color: #ffdd9d;
+  font-size: 1.8rem;
+}
+
+.foodlist .alignment .col-1 .menu-container .drinks-container .food_div .currency {
+  color: #ffe7bc;
+  font-size: 1.8rem;
+}
+
+.foodlist .alignment .col-1 .menu-container .drinks-container .food_div .button {
+  text-decoration: none;
+  color: #ffdd9d;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  background-color: #1a19176b;
+  border: solid 0.15rem #5e5e5e29;
+  padding: 0.2rem 0.5rem;
+  -webkit-transition: 0.12s;
+  transition: 0.12s;
+}
+
+.foodlist .alignment .col-1 .menu-container .drinks-container .food_div .amount {
+  color: #ffdd9d;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  background-color: #1a19176b;
+  border: solid 0.15rem #5e5e5e29;
+  padding: 0.2rem 0.5rem;
+  -webkit-transition: 0.12s;
+  transition: 0.12s;
+  font-size: 1.07rem;
+  width: 4rem;
+}
+/*# sourceMappingURL=foodlist.css.map */

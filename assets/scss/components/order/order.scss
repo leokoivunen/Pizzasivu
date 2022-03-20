@@ -1,0 +1,110 @@
+.prosessi {
+  margin: 0;
+  .alignment {
+    margin: 2vw auto;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .column {
+      background-color: #ffdd9d;
+      z-index: 2;
+      float: left;
+      max-width: 30%;
+      padding: 1rem;
+
+      .header_title {
+        font-size: 2.45rem;
+        text-align: center;
+        color: #181817;
+        font-weight: normal;
+
+        span {
+          color: #080808;
+        }
+      }
+
+      .wrapper {
+        .div {
+          margin: 1.5rem 0;
+          text-align: center;
+          a {
+            text-decoration: none;
+            font-size: 1.25rem;
+            color: rgb(26, 26, 26);
+            background-color: #ffdd9d;
+            padding: 0.5rem 0.6rem;
+            transition: 0.4s all ease-in;
+            border: solid 0.15rem #493a1d;
+          }
+
+          a:hover {
+            color: #ffdd9d;
+            background-color: rgb(26, 26, 26);
+            transition: 0.4s all ease-in;
+          }
+        }
+
+        .form {
+          display: none;
+          text-align: left;
+
+          input[type="text"] {
+            font-size: 1.2rem;
+            background-color: rgb(34, 34, 34);
+            padding: 0.3rem;
+            border: none;
+            color: white;
+          }
+
+          input[type="button"] {
+            font-size: 1.2rem;
+            background-color: #ffdd9d;
+            padding: 0.3rem;
+            margin: 0 -0.22rem;
+            border: none;
+            color: rgb(34, 34, 34);
+            transition: 0.4s all ease-in;
+          }
+
+          input[type="button"]:hover {
+            font-size: 1.2rem;
+            background-color: rgb(34, 34, 34);
+            padding: 0.3rem;
+            margin: 0 -0.22rem;
+            border: none;
+            color: #ffdd9d;
+            transition: 0.2s all ease-in;
+          }
+
+          .header_paragraph {
+            margin: 0.65rem 0;
+            font-size: 1.15rem;
+            color: rgb(26, 25, 25);
+          }
+
+          input:hover,
+          input:focus {
+            outline: none;
+          }
+        }
+
+        .kaava_form {
+          text-align: left;
+          display: none;
+
+          h3 {
+            color: rgb(5, 5, 5);
+          }
+
+          p {
+            margin: 0;
+            font-size: 1.2rem;
+            font-weight: normal;
+            color: rgb(53, 51, 38);
+          }
+        }
+      }
+    }
+  }
+}

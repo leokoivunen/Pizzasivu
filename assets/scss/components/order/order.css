@@ -1,0 +1,119 @@
+.prosessi {
+  margin: 0;
+}
+
+.prosessi .alignment {
+  margin: 2vw auto;
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.prosessi .alignment .column {
+  background-color: #ffdd9d;
+  z-index: 2;
+  float: left;
+  max-width: 30%;
+  padding: 1rem;
+}
+
+.prosessi .alignment .column .header_title {
+  font-size: 2.45rem;
+  text-align: center;
+  color: #181817;
+  font-weight: normal;
+}
+
+.prosessi .alignment .column .header_title span {
+  color: #080808;
+}
+
+.prosessi .alignment .column .wrapper .div {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.prosessi .alignment .column .wrapper .div a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: #1a1a1a;
+  background-color: #ffdd9d;
+  padding: 0.5rem 0.6rem;
+  -webkit-transition: 0.4s all ease-in;
+  transition: 0.4s all ease-in;
+  border: solid 0.15rem #493a1d;
+}
+
+.prosessi .alignment .column .wrapper .div a:hover {
+  color: #ffdd9d;
+  background-color: #1a1a1a;
+  -webkit-transition: 0.4s all ease-in;
+  transition: 0.4s all ease-in;
+}
+
+.prosessi .alignment .column .wrapper .form {
+  display: none;
+  text-align: left;
+}
+
+.prosessi .alignment .column .wrapper .form input[type="text"] {
+  font-size: 1.2rem;
+  background-color: #222222;
+  padding: 0.3rem;
+  border: none;
+  color: white;
+}
+
+.prosessi .alignment .column .wrapper .form input[type="button"] {
+  font-size: 1.2rem;
+  background-color: #ffdd9d;
+  padding: 0.3rem;
+  margin: 0 -0.22rem;
+  border: none;
+  color: #222222;
+  -webkit-transition: 0.4s all ease-in;
+  transition: 0.4s all ease-in;
+}
+
+.prosessi .alignment .column .wrapper .form input[type="button"]:hover {
+  font-size: 1.2rem;
+  background-color: #222222;
+  padding: 0.3rem;
+  margin: 0 -0.22rem;
+  border: none;
+  color: #ffdd9d;
+  -webkit-transition: 0.2s all ease-in;
+  transition: 0.2s all ease-in;
+}
+
+.prosessi .alignment .column .wrapper .form .header_paragraph {
+  margin: 0.65rem 0;
+  font-size: 1.15rem;
+  color: #1a1919;
+}
+
+.prosessi .alignment .column .wrapper .form input:hover,
+.prosessi .alignment .column .wrapper .form input:focus {
+  outline: none;
+}
+
+.prosessi .alignment .column .wrapper .kaava_form {
+  text-align: left;
+  display: none;
+}
+
+.prosessi .alignment .column .wrapper .kaava_form h3 {
+  color: #050505;
+}
+
+.prosessi .alignment .column .wrapper .kaava_form p {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: #353326;
+}
+/*# sourceMappingURL=order.css.map */

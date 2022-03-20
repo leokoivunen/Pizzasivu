@@ -1,0 +1,148 @@
+.fantasia {
+  margin: 0;
+  background-color: rgba(10, 10, 10, 0.925);
+  padding: 1rem;
+}
+
+.fantasia .alignment {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 6vw auto;
+  max-width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #000000ab;
+}
+
+.fantasia .alignment .col-1 {
+  z-index: 2;
+  padding: 1em;
+  min-width: 35%;
+  float: left;
+  background-color: #ffdd9d;
+}
+
+.fantasia .alignment .col-1 .header_title {
+  font-size: 2.75rem;
+  color: #0f0f0f;
+  font-weight: normal;
+}
+
+.fantasia .alignment .col-1 .header_title span {
+  color: #2b281c;
+}
+
+.fantasia .alignment .col-1 .header_paragraph {
+  font-size: 1.25rem;
+  color: #0e0e0e;
+}
+
+.fantasia .alignment .col-1 .flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0.5rem 0;
+}
+
+.fantasia .alignment .col-1 .flexbox .div {
+  margin: 0.3rem;
+}
+
+.fantasia .alignment .col-1 .flexbox .div h3 {
+  font-weight: normal;
+  font-size: 1.4rem;
+  color: #222121;
+}
+
+.fantasia .alignment .col-1 .flexbox .div .select-wrapper {
+  margin: 0.5rem 0;
+}
+
+.fantasia .alignment .col-1 .flexbox .div .select-wrapper #pohja {
+  background-color: #f5f5f5;
+  padding: 0.4rem 0.5rem;
+  border: none;
+  outline: none;
+  font-size: 0.95rem;
+}
+
+.fantasia .alignment .col-1 .flexbox .div .select-wrapper #kastike {
+  background-color: #f5f5f5;
+  padding: 0.4rem 0.5rem;
+  border: none;
+  outline: none;
+  font-size: 0.95rem;
+}
+
+.fantasia .alignment .col-1 .taytteet-container {
+  margin: 0.3rem;
+}
+
+.fantasia .alignment .col-1 .taytteet-container h3 {
+  font-weight: normal;
+  font-size: 1.4rem;
+  color: #222121;
+}
+
+.fantasia .alignment .col-1 .taytteet-container .select-wrapper {
+  margin: 0.5rem 0;
+}
+
+.fantasia .alignment .col-1 .taytteet-container .select-wrapper #taytteet {
+  list-style-type: none;
+}
+
+.fantasia .alignment .col-1 .taytteet-container .select-wrapper #taytteet li {
+  color: #030303;
+}
+
+.fantasia .alignment .col-1 .complete-order {
+  margin: 2rem 0;
+}
+
+.fantasia .alignment .col-1 .complete-order a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: #1a1a1a;
+  background-color: #ffdd9d;
+  border: solid 0.15rem #493a1d;
+  padding: 0.5rem 0.6rem;
+  -webkit-transition: 0.4s all ease-in;
+  transition: 0.4s all ease-in;
+}
+
+.fantasia .alignment .col-1 .complete-order a:hover {
+  color: #ffdd9d;
+  background-color: #1a1a1a;
+  -webkit-transition: 0.4s all ease-in;
+  transition: 0.4s all ease-in;
+}
+
+.fantasia .alignment .col-2 {
+  float: left;
+  z-index: 2;
+}
+
+.fantasia .alignment .col-2 .fantasia_preview {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=fantasia.css.map */

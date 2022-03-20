@@ -5,12 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Pizza nettisivu." />
-    <title>Netmor - Etusivu</title>
-    <link rel="stylesheet" href="assets/scss/components/home/home.css" />
-    <link rel="stylesheet" href="assets/scss/components/all/components.css" />
+    <title>Netmor - Tilaus</title>
+    <link rel="stylesheet" href="assets/scss/components/order/order.css">
+    <link rel="stylesheet" href="assets/scss/components/all/components.css">
     <link rel="stylesheet" href="assets/scss/index.css" />
-
-    <link rel="shortcut icon" type="image/png" href="assets/iconpack/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="assets/iconpack/favicon.png"/>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
@@ -56,56 +55,35 @@
         </div>
       </nav>
 
-      <main class="main">
-        <div class="alignment">
-          <div class="col-1">
-            <div class="text-wrapper">
-              <h2 class="sub_title">Hei, tule syömään netmoriin, tarjoamme asiakkailemme mahtavan maku kokemuksen, meiltä saat makua elämään !</h2>
-            </div>
+      <main>
+        <div class="prosessi">
+          <div class="alignment">
+            <div class="column">
+              <h2 class="header_title">Hei, <span>haluatko</span> kotiinkuljetuksen vai tuletko noutaa pizzan meiltä?</h2>
 
-            <div class="btn-wrapper">
-              <a href="ruokalista.html" class="button important"><i class="fa-solid fa-pizza-slice"></i> Ruokalista</a>
-              <a href="" onclick="alert(`Arkipäivisin auki: klo 12:00 - 18:00`)" class="button"
-                ><i class="fa-solid fa-arrow-right-long"></i> Aukioloajat</a
-              >
+              <div class="wrapper">
+                <div class="div">
+                  <a onclick="showForm()">Kuljetus</a>
+                  <a onclick="console.log('nouda pizza');">Nouto</a>
+                </div>
+                <div class="form">
+                  <p class="header_paragraph">Kuljetus sisältää ilmaisen toimituksen.</p>
+                  <input type="text" placeholder="Syötä toimitusosoite" />
+                  <input type="button" onclick="orderProducts()" value="Tilaa" />
+                </div>
+
+                <div class="kaava_form">
+                  <h3>Pizzan tilausprosessi</h3>
+                  <p><i class="fa-solid fa-pizza-slice"></i> Valmistus: <span id="time">20</span> minuuttia</åp>
+                  <p><i class="fa-solid fa-truck"></i> Toimitus: <span id="time">10</span> minuuttia</h2>
+                  <p><i class="fa-solid fa-hand-holding-dollar"></i> Yhteenveto: <span id="time">30</span> minuuttia</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </main>
-
-      <footer class="footer">
-        <div class="alignment">
-          <div class="col-1">
-            <div class="div">
-              <p>
-                <i class="fa-solid fa-phone"></i>
-                <span> +358 84 919 289 000</span>
-                <br />
-                Ota yhteyttä meihin
-              </p>
-            </div>
-
-            <div class="div">
-              <p>
-                <i class="fa-solid fa-location"></i>
-                <span> Kerava</span>
-                <br />
-                Tuusulantie, 04200 Kerava
-              </p>
-            </div>
-
-            <div class="div">
-              <p>
-                <i class="fa-solid fa-clock"></i>
-                <span> Avoinna Ma - Su</span>
-                <br />
-                12:00 - 21:00
-              </p>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <script src="assets/js/menu.js"></script>
     </header>
-    <script src="assets/js/menu.js"></script>
   </body>
 </html>

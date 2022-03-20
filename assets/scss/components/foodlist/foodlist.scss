@@ -1,0 +1,174 @@
+.foodlist {
+  background-color: rgba(10, 10, 10, 0.925);
+  padding: 1rem;
+  margin: 0;
+  .alignment {
+    margin: 2vw auto;
+    max-width: 69.2%;
+    display: flex;
+    justify-content: space-between;
+
+    .col-1 {
+      background-color: rgba(4, 4, 4, 0.028);
+      z-index: 2;
+      float: left;
+      max-width: 85%;
+
+      .menu-container {
+        .list_ordered {
+          display: inline-flex;
+          list-style: none;
+          .list_item {
+            display: flex;
+            align-items: center;
+            a {
+              text-decoration: none;
+              color: #ffdd9d;
+              margin: 0 0.15rem;
+              font-size: 1.1rem;
+              transition: 0.5s ease-in-out;
+              background-color: #1a19176b;
+              border: solid 0.15rem #ffdd9d;
+              padding: 1rem;
+              transition: 0.12s;
+            }
+
+            .important {
+              background-color: #1a1917;
+              border: solid 0.3rem #1a191721;
+              transition: 0.12s;
+            }
+
+            a:hover {
+              transition: 0.12s ease-in;
+              background-color: #1a1917;
+              border: solid 0.3rem #1a191721;
+            }
+
+            a:focus {
+              background-color: #1a1917;
+              border: solid 0.3rem #1a191721;
+            }
+          }
+        }
+
+        .food-container {
+          display: none;
+          flex-direction: column;
+          width: 100%;
+          .food_div {
+            max-width: 80%;
+            background-color: #8a79599f;
+            padding: 0.5rem;
+            border-radius: 8px;
+
+            margin: 0.4rem 0.15rem;
+            .food_name {
+              font-size: 2rem;
+              color: white;
+            }
+
+            .food_paragraph {
+              color: whitesmoke;
+              font-size: 1.3rem;
+            }
+
+            .img_width {
+              float: right;
+              width: 20.1%;
+            }
+
+            .food_price {
+              color: #ffdd9d;
+              font-size: 1.8rem;
+            }
+            .currency {
+              color: #ffe7bc;
+              font-size: 1.8rem;
+            }
+            .food_count {
+              color: #f8f4ed;
+              font-size: 1.4rem;
+            }
+            .button {
+              text-decoration: none;
+              color: #ffdd9d;
+              transition: 0.5s ease-in-out;
+              background-color: #1a19176b;
+              border: solid 0.15rem #5e5e5e29;
+              padding: 0.2rem 0.5rem;
+              transition: 0.12s;
+            }
+
+            .amount {
+              color: #ffdd9d;
+              transition: 0.5s ease-in-out;
+              background-color: #1a19176b;
+              border: solid 0.15rem #5e5e5e29;
+              padding: 0.2rem 0.5rem;
+              transition: 0.12s;
+              font-size: 1.07rem;
+              width: 4rem;
+            }
+          }
+        }
+
+        .drinks-container {
+          display: none;
+          flex-direction: column;
+          width: 100%;
+          .food_div {
+            max-width: 80%;
+            background-color: #59888a9f;
+            padding: 0.5rem;
+            border-radius: 8px;
+            margin: 0.4rem 0.15rem;
+            .food_name {
+              font-size: 2rem;
+              color: white;
+            }
+
+            .food_paragraph {
+              color: whitesmoke;
+              font-size: 1.3rem;
+            }
+
+            .img_width {
+              float: right;
+              width: 25.5%;
+            }
+
+            .food_price {
+              color: #ffdd9d;
+              font-size: 1.8rem;
+            }
+            .currency {
+              color: #ffe7bc;
+              font-size: 1.8rem;
+            }
+            .button {
+              text-decoration: none;
+              color: #ffdd9d;
+              transition: 0.5s ease-in-out;
+              background-color: #1a19176b;
+              border: solid 0.15rem #5e5e5e29;
+              padding: 0.2rem 0.5rem;
+              transition: 0.12s;
+            }
+
+            .amount {
+              color: #ffdd9d;
+              transition: 0.5s ease-in-out;
+              background-color: #1a19176b;
+              border: solid 0.15rem #5e5e5e29;
+              padding: 0.2rem 0.5rem;
+              transition: 0.12s;
+              font-size: 1.07rem;
+              width: 4rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

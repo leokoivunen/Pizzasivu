@@ -1,0 +1,121 @@
+.fantasia {
+  margin: 0;
+    background-color: rgba(10, 10, 10, 0.925);
+  padding: 1rem;
+  .alignment {
+    display: inline-flex;
+    flex-direction: row;
+    margin: 6vw auto;
+    max-width: 70%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #000000ab;
+
+    .col-1 {
+      z-index: 2;
+      padding: 1em;
+      min-width: 35%;
+      float: left;
+      background-color: #ffdd9d;
+
+      .header_title {
+        font-size: 2.75rem;
+        color: #0f0f0f;
+        font-weight: normal;
+
+        span {
+          color: #2b281c;
+        }
+      }
+
+      .header_paragraph {
+        font-size: 1.25rem;
+        color: rgb(14, 14, 14);
+      }
+
+      .flexbox {
+        display: flex;
+        justify-content: left;
+        flex-direction: row;
+        margin: 0.5rem 0;
+        .div {
+          margin: 0.3rem;
+          h3 {
+            font-weight: normal;
+            font-size: 1.4rem;
+            color: rgb(34, 33, 33);
+          }
+
+          .select-wrapper {
+            margin: 0.5rem 0;
+            #pohja {
+              background-color: #f5f5f5;
+              padding: 0.4rem 0.5rem;
+              border: none;
+              outline: none;
+              font-size: 0.95rem;
+            }
+
+            #kastike {
+              background-color: #f5f5f5;
+              padding: 0.4rem 0.5rem;
+              border: none;
+              outline: none;
+              font-size: 0.95rem;
+            }
+          }
+        }
+      }
+
+      .taytteet-container {
+        margin: 0.3rem;
+        h3 {
+          font-weight: normal;
+          font-size: 1.4rem;
+          color: rgb(34, 33, 33);
+        }
+
+        .select-wrapper {
+          margin: 0.5rem 0;
+
+          #taytteet {
+            list-style-type: none;
+
+            li {
+              color: rgb(3, 3, 3);
+            }
+          }
+        }
+      }
+
+      .complete-order {
+        margin: 2rem 0;
+
+        a {
+          text-decoration: none;
+          font-size: 1.25rem;
+          color: rgb(26, 26, 26);
+          background-color: #ffdd9d;
+          border: solid 0.15rem #493a1d;
+          padding: 0.5rem 0.6rem;
+          transition: 0.4s all ease-in;
+        }
+
+        a:hover {
+          color: #ffdd9d;
+          background-color: rgb(26, 26, 26);
+          transition: 0.4s all ease-in;
+        }
+      }
+    }
+    .col-2 {
+      float: left;
+      z-index: 2;
+
+      .fantasia_preview {
+        width: 100%;
+        display: flex;
+      }
+    }
+  }
+}
