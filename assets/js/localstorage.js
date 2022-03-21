@@ -2,6 +2,7 @@ const register = document.querySelector(".register");
 let localStorage = [];
 
 register.addEventListener("click", () => {
+  console.log("when button is clicked");
   const fname = document.querySelector(".fname");
   const lname = document.querySelector(".lname");
   const email = document.querySelector(".email");
@@ -9,15 +10,13 @@ register.addEventListener("click", () => {
   const passwd_repeat = document.querySelector(".passwd-repeat");
 
   if (passwd_input.value.length > 1 && passwd_repeat.value.length > 1) {
-      console.log("Text is not too short");
     if (passwd_input.value === passwd_repeat.value) {
-      alert("Success!");
-      window.location.href = "http://netmor.netlify.app/kirjautumis.html";
+        window.location.href = "http://netmor.netlify.app/kirjautumis.html";
     } else {
-      alert("Failed!");
+      alert("Salasana ja salasana uudelleen on väärin!");
     }
   }
   else {
-      console.log("Text is short");
+    alert("Täytä tyhjät tekstilaatikot")
   }
 });
