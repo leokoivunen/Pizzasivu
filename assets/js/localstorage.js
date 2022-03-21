@@ -14,7 +14,6 @@ register.addEventListener("click", () => {
 
     alert("Register success!");
     alert("Redirecting user to new address")
-    window.location.href = "http://netmor.netlify.app/kirjautumis.html";
   } else {
     alert("Syöttämäsi salasana ei ole sama kuin vahvistettava salasana...");
   }
