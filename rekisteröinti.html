@@ -67,31 +67,37 @@
             <div class="text-wrapper">
               <h2 class="sub_title">Rekisteröidy</h2>
             </div>
-            <form action="POST" data-netlify="true">
+            <form>
               <div class="form-container">
                 <div class="flex">
+
                   <div class="field">
-                    <br><label for="name">Etunimi</label></br>
-                    <input type="text" name="name" id="name" required />
+                    <label for="name">Etunimi</label>
+                    <input type="text" class="fname" name="name" required />
                   </div>
+
                   <div class="field">
-                    <br><label for="name">Sukunimi</label></br>
-                    <input type="text" name="name" id="name" required />
+                    <label for="name">Sukunimi</label>
+                    <input type="text" class="lname" name="name" required />
                   </div>
+
                   <div class="field">
-                    <br><label for="email">Sähköposti</label></br>
-                    <input type="email" name="email" id="email" required />
+                    <label for="email">Sähköposti</label>
+                    <input type="email" class="email" name="email" required />
                   </div>
+
                   <div class="field">
-                    <br><label for="psw">Salasana</label></br>
-                    <input type="password" name="psw" id="psw" required>
-                  </div>
+                    <label for="passwd">Salasana</label>
+                    <input type="password" class="passwd" name="passwd" required>
+                  </div class="field">
+
                   <div class="field">
-                    <br><label for="psw">Vahvista Salasana</label></br>
-                    <input type="password" name="psw-repeat" id="psw-repeat" required>
+                    <label for="passwd-repeat">Vahvista Salasana</label>
+                    <input type="password" class="passwd-repeat" name="passwd-repeat" required>
                   </div>
+
                 </div>
-                <br></br><input type="submit" value="Rekisteröidy" />
+                <input type="submit" class="register" value="Rekisteröidy" />
               </div>
               <br>
               <div class="field">
@@ -101,6 +107,7 @@
           </div>
         </div>
       </main>
+      <script src="assets/js/localstorage.js"></script>
       <script src="assets/js/menu.js"></script>
     </header>
   </body>
