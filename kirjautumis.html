@@ -67,19 +67,17 @@
                 <div class="flex">
                   <div class="field">
                     <label for="email">Sähköposti</label>
-                    <br />
-                    <input type="email" name="email" id="email" required />
+                    <input type="email" class="email" name="email" required />
                   </div>
 
                   <div class="field">
                     <label for="passwd">Salasana</label>
-                    <br />
-                    <input type="password" name="passwd" id="passwd" required />
+                    <input type="password" class="passwd" name="passwd" required />
                   </div>
                 </div>
 
                 <div class="field" style="margin: 2rem .5rem;">
-                  <a href="#" style="padding: 1rem; text-decoration: none; color: black; font-weight: bold; background-color: #FFDD9D;">Kirjaudu</a>
+                  <a href="#" onclick="loginUser()" style="padding: 1rem; text-decoration: none; color: black; font-weight: bold; background-color: #FFDD9D;">Kirjaudu</a>
                 </div>
 
                 <div class="field">
@@ -90,6 +88,7 @@
           </div>
         </div>
       </main>
+      <script src="assets/js/localstorage.js"></script>
       <script src="assets/js/menu.js"></script>
     </header>
   </body>
