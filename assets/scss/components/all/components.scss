@@ -89,6 +89,7 @@
 
 .footer {
   position: absolute;
+  bottom: 0;
   width: 100%;
   display: flex;
   .alignment {
@@ -110,16 +111,16 @@
         justify-content: flex-start;
 
         p {
+          line-height: 2;
           font-weight: normal;
           color: rgb(70, 61, 41);
-          border-bottom: 2px solid black;
 
           i {
             color: #1a1917;
           }
 
           span {
-            font-weight: normal;
+            font-weight: bold;
             color: black;
           }
         }
