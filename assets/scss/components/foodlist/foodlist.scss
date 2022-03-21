@@ -57,34 +57,37 @@
           flex-direction: column;
           width: 100%;
           .food_div {
-            max-width: 80%;
+            max-width: 40rem;
             background-color: #8a79599f;
             padding: 0.5rem;
             border-radius: 8px;
-
             margin: 0.4rem 0.15rem;
             .food_name {
-              font-size: 2rem;
+              line-height: 1.5;
+              font-weight: normal;
+              font-size: 1.8rem;
               color: white;
             }
 
             .food_paragraph {
               color: whitesmoke;
+              width: auto;
               font-size: 1.3rem;
+              line-height: 2;
             }
 
             .img_width {
               float: right;
-              width: 20.1%;
+              width: 30%;
             }
 
             .food_price {
               color: #ffdd9d;
-              font-size: 1.8rem;
+              font-size: 1.3rem;
             }
             .currency {
               color: #ffe7bc;
-              font-size: 1.8rem;
+              font-size: 1.3rem;
             }
             .food_count {
               color: #f8f4ed;
@@ -118,33 +121,41 @@
           flex-direction: column;
           width: 100%;
           .food_div {
-            max-width: 80%;
+            max-width: 40rem;
             background-color: #59888a9f;
             padding: 0.5rem;
             border-radius: 8px;
             margin: 0.4rem 0.15rem;
             .food_name {
-              font-size: 2rem;
+              line-height: 1.5;
+              font-weight: normal;
+              font-size: 1.8rem;
               color: white;
             }
 
             .food_paragraph {
               color: whitesmoke;
+              width: auto;
               font-size: 1.3rem;
+              line-height: 2;
             }
 
             .img_width {
               float: right;
-              width: 25.5%;
+              width: 30%;
             }
 
             .food_price {
               color: #ffdd9d;
-              font-size: 1.8rem;
+              font-size: 1.3rem;
             }
             .currency {
               color: #ffe7bc;
-              font-size: 1.8rem;
+              font-size: 1.3rem;
+            }
+            .food_count {
+              color: #f8f4ed;
+              font-size: 1.4rem;
             }
             .button {
               text-decoration: none;
