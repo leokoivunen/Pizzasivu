@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Pizza nettisivu." />
-    <title>Netmor - Fantasia</title>
+    <title>Netmor - Kirjaudu</title>
+    <link rel="stylesheet" href="assets/scss/components/contact/contact.css" />
     <link rel="stylesheet" href="assets/scss/components/all/components.css" />
-    <link rel="stylesheet" href="assets/scss/components/fantasia/fantasia.css">
     <link rel="stylesheet" href="assets/scss/index.css" />
     <link rel="shortcut icon" type="image/png" href="assets/iconpack/favicon.png" />
     <link
@@ -55,60 +55,38 @@
         </div>
       </nav>
 
-      <main>
-        <div class="fantasia">
-          <div class="alignment">
-            <div class="col-1">
-              <h2 class="header_title">PIZZA <span>FANTASIA</span></h2>
-              <p class="header_paragraph">Valitse täytteet oman makusi mukaan.</p>
+      <main class="main">
+        <div class="alignment">
+          <div class="col-1">
+            <div class="text-wrapper">
+              <h2 class="sub_title">Kirjaudu sisään</h2>
+            </div>
 
-              <div class="flexbox">
-                <div class="div">
-                  <h3>POHJA</h3>
-                  <div class="select-wrapper">
-                    <select id="pohja">
-                      <option value="medium">Normaali</option>
-                      <option value="extralarge">Gluteeniton</option>
-                    </select>
+            <form action="POST">
+              <div class="form-container">
+                <div class="flex">
+                  <div class="field">
+                    <label for="email">Sähköposti</label>
+                    <br />
+                    <input type="email" name="email" id="email" required />
+                  </div>
+
+                  <div class="field">
+                    <label for="passwd">Salasana</label>
+                    <br />
+                    <input type="password" name="passwd" id="passwd" required />
                   </div>
                 </div>
 
-                <div class="div">
-                  <h3>KASTIKKEET</h3>
-                  <div class="select-wrapper">
-                    <select id="kastike">
-                      <option value="medium">Ilman</option>
-                      <option value="extralarge">Valkosipuli</option>
-                    </select>
-                  </div>
+                <div class="field" style="margin: 2rem .5rem;">
+                  <a href="#" style="padding: 1rem; text-decoration: none; color: black; font-weight: bold; background-color: #FFDD9D;">Kirjaudu</a>
                 </div>
-              </div>
 
-              <div class="taytteet-container">
-                <h3>TÄYTTEET</h3>
-                <div class="select-wrapper">
-                  <ol id="taytteet">
-                    <li><input type="checkbox" /> kinkku</li>
-                    <li><input type="checkbox" /> ananas</li>
-                    <li><input type="checkbox" /> salami</li>
-                    <li><input type="checkbox" /> kana</li>
-                    <li><input type="checkbox" /> sipuli</li>
-                    <li><input type="checkbox" /> aurajuusto + 2€</li>
-                    <li><input type="checkbox" /> pepperoni + 2€</li>
-                    <li><input type="checkbox" /> pekoni + 2€</li>
-                    <li><input type="checkbox" /> kebab + 2€</li>
-                    <li><input type="checkbox" /> juusto + 2€</li>
-                  </ol>
+                <div class="field">
+                  <p style="color: white;">Unohditko <a href="#" style="text-decoration: none; color: #FFDD9D;">salasanan</a> ?</p>
+                  <p style="color: white;">Eikö sinulla ole käyttäjää <a href="#" style="text-decoration: none; color: #FFDD9D;">rekisteröidy</a></p>
                 </div>
-              </div>
-
-              <div class="complete-order">
-                <a href="tilaus.html"><i class="fa-solid fa-shopping-cart"></i> LISÄÄ TILAUKSEEN</a>
-              </div>
-            </div>
-            <div class="col-2">
-              <img src="assets/iconpack/4.jpg" alt="pizza" class="fantasia_preview" />
-            </div>
+            </form>
           </div>
         </div>
       </main>

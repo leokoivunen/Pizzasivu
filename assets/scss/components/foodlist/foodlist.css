@@ -81,7 +81,7 @@
 }
 
 .foodlist .alignment .col-1 .menu-container .food-container .food_div {
-  max-width: 80%;
+  max-width: 40rem;
   background-color: #8a79599f;
   padding: 0.5rem;
   border-radius: 8px;
@@ -89,28 +89,32 @@
 }
 
 .foodlist .alignment .col-1 .menu-container .food-container .food_div .food_name {
-  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: normal;
+  font-size: 1.8rem;
   color: white;
 }
 
 .foodlist .alignment .col-1 .menu-container .food-container .food_div .food_paragraph {
   color: whitesmoke;
+  width: auto;
   font-size: 1.3rem;
+  line-height: 2;
 }
 
 .foodlist .alignment .col-1 .menu-container .food-container .food_div .img_width {
   float: right;
-  width: 20.1%;
+  width: 30%;
 }
 
 .foodlist .alignment .col-1 .menu-container .food-container .food_div .food_price {
   color: #ffdd9d;
-  font-size: 1.8rem;
+  font-size: 1.3rem;
 }
 
 .foodlist .alignment .col-1 .menu-container .food-container .food_div .currency {
   color: #ffe7bc;
-  font-size: 1.8rem;
+  font-size: 1.3rem;
 }
 
 .foodlist .alignment .col-1 .menu-container .food-container .food_div .food_count {
@@ -153,7 +157,7 @@
 }
 
 .foodlist .alignment .col-1 .menu-container .drinks-container .food_div {
-  max-width: 80%;
+  max-width: 40rem;
   background-color: #59888a9f;
   padding: 0.5rem;
   border-radius: 8px;
@@ -161,28 +165,37 @@
 }
 
 .foodlist .alignment .col-1 .menu-container .drinks-container .food_div .food_name {
-  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: normal;
+  font-size: 1.8rem;
   color: white;
 }
 
 .foodlist .alignment .col-1 .menu-container .drinks-container .food_div .food_paragraph {
   color: whitesmoke;
+  width: auto;
   font-size: 1.3rem;
+  line-height: 2;
 }
 
 .foodlist .alignment .col-1 .menu-container .drinks-container .food_div .img_width {
   float: right;
-  width: 25.5%;
+  width: 30%;
 }
 
 .foodlist .alignment .col-1 .menu-container .drinks-container .food_div .food_price {
   color: #ffdd9d;
-  font-size: 1.8rem;
+  font-size: 1.3rem;
 }
 
 .foodlist .alignment .col-1 .menu-container .drinks-container .food_div .currency {
   color: #ffe7bc;
-  font-size: 1.8rem;
+  font-size: 1.3rem;
+}
+
+.foodlist .alignment .col-1 .menu-container .drinks-container .food_div .food_count {
+  color: #f8f4ed;
+  font-size: 1.4rem;
 }
 
 .foodlist .alignment .col-1 .menu-container .drinks-container .food_div .button {
