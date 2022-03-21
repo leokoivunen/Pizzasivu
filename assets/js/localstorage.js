@@ -1,6 +1,5 @@
 const register = document.querySelector(".register");
 
-
 register.addEventListener("click", () => {
   const fname = document.querySelector(".fname");
   const lname = document.querySelector(".lname");
@@ -9,14 +8,14 @@ register.addEventListener("click", () => {
   const passwd_repeat = document.querySelector(".passwd-repeat");
 
   if (passwd_input.value === passwd_repeat.value) {
-    console.log("\nRegister success!");
 
     localStorage.setItem("Email", "" + email.value);
     localStorage.setItem("Password", "" + passwd_input.value);
 
+    alert("Register success!");
     alert("Redirecting user to new address")
     window.location.href = "http://netmor.netlify.app/kirjautumis.html";
   } else {
-    console.log("\n👮‍♂️ Syöttämäsi salasana ei ole sama kuin vahvistettava salasana...");
+    alert("Syöttämäsi salasana ei ole sama kuin vahvistettava salasana...");
   }
 });
