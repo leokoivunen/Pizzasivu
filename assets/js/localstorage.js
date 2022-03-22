@@ -20,4 +20,6 @@ function loginUser(user) {
 
   console.log(email.value);
   console.log(password.value);
+
+  if ()
 }
