@@ -44,7 +44,7 @@
             <div class="cart_login">
               <a href="kirjautumis.html" class="login">
                 <i class="fa-solid fa-user"></i>
-                Kirjaudu sisään
+                <span id="profile">Kirjaudu sisään</span>
               </a>
               <a href="" class="cart">
                 <i class="fa-solid fa-bag-shopping"></i>
@@ -55,7 +55,7 @@
         </div>
       </nav>
 
-      <main class="main">
+      <main class="main" id="login">
         <div class="alignment">
           <div class="col-1">
             <div class="text-wrapper">
@@ -66,13 +66,13 @@
               <div class="form-container">
                 <div class="flex">
                   <div class="field">
-                    <label for="email">Sähköposti</label>
-                    <input type="email" class="email" name="email" required />
+                    <label for="login_email">Sähköposti</label>
+                    <input type="email" id="login_email" name="login_email" required />
                   </div>
 
                   <div class="field">
-                    <label for="passwd">Salasana</label>
-                    <input type="password" class="passwd" name="passwd" required />
+                    <label for="login_passwd">Salasana</label>
+                    <input type="password" id="login_passwd" name="login_passwd" required />
                   </div>
                 </div>
 
@@ -82,13 +82,62 @@
 
                 <div class="field">
                   <p style="color: white;">Unohditko <a href="#" style="text-decoration: none; color: #FFDD9D;">salasanan</a> ?</p>
-                  <p style="color: white;">Eikö sinulla ole käyttäjää <a href="rekisteröinti.html" style="text-decoration: none; color: #FFDD9D;">rekisteröidy</a></p>
+                  <p style="color: white;">Eikö sinulla ole käyttäjää <a onclick="showRegisterForm()" style="text-decoration: none; color: #FFDD9D;">rekisteröidy</a></p>
                 </div>
             </form>
           </div>
         </div>
       </main>
-      <script src="assets/js/localstorage.js"></script>
+
+      <main class="main" id="register">
+        <div class="alignment">
+          <div class="col-1">
+            <div class="text-wrapper">
+              <h2 class="sub_title">Rekisteröidy</h2>
+            </div>
+            <form>
+              <div class="form-container">
+                <div class="flex">
+                  <div class="field">
+                    <label for="register_fname">Etunimi</label>
+                    <input type="text" id="register_fname" name="name" required />
+                  </div>
+
+                  <div class="field">
+                    <label for="register_lname">Sukunimi</label>
+                    <input type="text" id="register_lname" name="name" required />
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label for="register_email">Sähköposti</label>
+                  <input type="email" id="register_email" name="register_email" required />
+                </div>
+
+                <div class="field">
+                  <label for="register_passwd">Salasana</label>
+                  <input type="password" id="register_passwd" name="register_passwd" required>
+                </div class="field">
+
+                <div class="field">
+                  <label for="register_passwdrepeat">Vahvista salasana</label>
+                  <input type="password" id="register_passwdrepeat" name="register_passwdrepeat" required>
+                </div>
+                <br>
+                <br>
+                <a href="#" onclick="registerUser()" style="margin: 0 .5rem; padding: 1rem; text-decoration: none; color: black; font-weight: bold; background-color: #FFDD9D;">Rekisteröidy</a>
+              </div>
+              <br>
+              <br>
+              <div class="field">
+                <p style="color: white; margin: 0 .5rem">Onko jo käyttäjä? <a onclick="showLoginForm()" style="text-decoration: none; color: #FFDD9D;">Kirjaudu sisään</a>.</p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </main>
+      
+      <script src="assets/js/script.js"></script>
       <script src="assets/js/menu.js"></script>
     </header>
   </body>
