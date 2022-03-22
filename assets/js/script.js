@@ -34,9 +34,6 @@ function loginUser(user) {
 
   if (login_email.value === stored_email && login_passwd.value === stored_passwd) {
     alert("Olet kirjautunut sisään!");
-    window.addEventListener("DOMContentLoaded", (event) => {
-      userProfile.innerText = localStorage.getItem("Profile")
-    });
   } else {
     alert("Salasana tai sähköposti on väärä.");
   }
@@ -53,3 +50,7 @@ function showLoginForm(user) {
 
   registerForm.style.display = "none";
 }
+
+window.addEventListener("DOMContentLoaded", (event) => {
+  userProfile.innerText = localStorage.getItem("Profile")
+});
