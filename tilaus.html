@@ -68,7 +68,7 @@
                 </div>
                 <div class="form">
                   <p class="header_paragraph">Kuljetus sisältää ilmaisen toimituksen.</p>
-                  <input type="text" placeholder="Syötä toimitusosoite" />
+                  <input id="input" type="text" placeholder="Syötä toimitusosoite" />
                   <input type="button" onclick="orderProducts()" value="Tilaa" />
                 </div>
 
@@ -83,7 +83,12 @@
           </div>
         </div>
       </main>
-      <script src="assets/js/menu.js"></script>
+      <script src="assets/js/menu.js">
+        const input = document.getElementById("input");
+        if (input == "kerava") {
+          console.log("test");
+        }
+      </script>
     </header>
   </body>
 </html>
