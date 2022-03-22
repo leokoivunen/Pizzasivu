@@ -1,0 +1,99 @@
+.main {
+    background-color: rgba(10, 10, 10, 0.925);
+    padding: 1rem;
+    margin: 0;
+    .alignment {
+      margin: 6vw auto;
+      max-width: 69.2%;
+      display: flex;
+  
+      .col-1 {
+        z-index: 2;
+        float: left;
+        max-width: auto;
+        .text-wrapper {
+          .sub_title {
+            font-weight: normal;
+            font-size: 3.2rem;
+            color: #fff4e0;
+          }
+        }
+  
+        form {
+          margin: 1rem 0;
+          .form-container {
+            .flex {
+              display: inline-flex;
+              .field {
+                margin: 0 0.5rem;
+                label {
+                  color: white;
+                  font-weight: normal;
+                  font-size: 1.7rem;
+                }
+  
+                input {
+                  margin: 1rem 0;
+                  background-color: transparent;
+                  padding: 0.6rem 1rem;
+                  border: solid 0.01rem #908282;
+                  color: white;
+                  font-size: 1.2rem;
+                  outline: none;
+                  width: 100%;
+                }
+              }
+            }
+            .field {
+              margin: 0 0.5rem;
+  
+              label {
+                color: white;
+                font-weight: normal;
+                font-size: 1.7rem;
+              }
+  
+              textarea {
+                font-family: "Consolas", sans-serif;
+                padding: 1rem;
+                height: 10rem;
+                border: solid 0.01rem #908282;
+                color: white;
+                background-color: transparent;
+                font-size: 1.2rem;
+                width: 100%;
+              }
+  
+              textarea:focus {
+                outline: 0;
+              }
+            }
+  
+            #netlify {
+              margin: 2rem 0;
+            }
+  
+            input[type="submit"] {
+              margin: 0 0.5rem;
+              text-decoration: none;
+              color: #030303d7;
+              font-size: 1.5rem;
+              transition: 0.5s ease-in-out;
+              background-color: #ffdd9d;
+              border: solid 0.15rem #ffdd9d;
+              padding: 0.5rem 1.5rem;
+              transition: 0.2s all ease-in;
+            }
+  
+            input[type="submit"]:hover {
+              background-color: #030303d7;
+              color: #ffdd9d;
+              border: solid 0.15rem #030303d7;
+              transition: 0.2s all ease-in;
+            }
+          }
+        }
+      }
+    }
+  }
+  

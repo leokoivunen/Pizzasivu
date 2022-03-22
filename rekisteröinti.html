@@ -56,11 +56,6 @@
       </nav>
     </section>
       <div class="container center1">
-        <style>
-          .center1 {
-              text-align: center;
-            }
-        </style>
       <main class="main">
         <div class="alignment">
           <div class="col-1">
@@ -70,7 +65,6 @@
             <form>
               <div class="form-container">
                 <div class="flex">
-
                   <div class="field">
                     <label for="name">Etunimi</label>
                     <input type="text" class="fname" name="name" required />
@@ -80,28 +74,30 @@
                     <label for="name">Sukunimi</label>
                     <input type="text" class="lname" name="name" required />
                   </div>
-
-                  <div class="field">
-                    <label for="email">Sähköposti</label>
-                    <input type="email" class="email" name="email" required />
-                  </div>
-
-                  <div class="field">
-                    <label for="passwd">Salasana</label>
-                    <input type="password" class="passwd" name="passwd" required>
-                  </div class="field">
-
-                  <div class="field">
-                    <label for="passwd-repeat">Vahvista salasana</label>
-                    <input type="password" class="passwd-repeat" name="passwd-repeat" required>
-                  </div>
-
                 </div>
-                <a href="#" onclick="registerUser()" style="padding: 1rem; text-decoration: none; color: black; font-weight: bold; background-color: #FFDD9D;">Rekisteröidy</a>
+
+                <div class="field">
+                  <label for="email">Sähköposti</label>
+                  <input type="email" class="email" name="email" required />
+                </div>
+
+                <div class="field">
+                  <label for="passwd">Salasana</label>
+                  <input type="password" class="passwd" name="passwd" required>
+                </div class="field">
+
+                <div class="field">
+                  <label for="passwd-repeat">Vahvista salasana</label>
+                  <input type="password" class="passwd-repeat" name="passwd-repeat" required>
+                </div>
+                <br>
+                <br>
+                <a href="#" onclick="registerUser()" style="margin: 0 .5rem; padding: 1rem; text-decoration: none; color: black; font-weight: bold; background-color: #FFDD9D;">Rekisteröidy</a>
               </div>
               <br>
+              <br>
               <div class="field">
-                <p style="color: white;">Onko jo käyttäjä? <a href="kirjautumis.html" style="text-decoration: none; color: #FFDD9D;">Kirjaudu sisään</a>.</p>
+                <p style="color: white; margin: 0 .5rem">Onko jo käyttäjä? <a href="kirjautumis.html" style="text-decoration: none; color: #FFDD9D;">Kirjaudu sisään</a>.</p>
               </div>
             </form>
           </div>
