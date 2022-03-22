@@ -17,9 +17,4 @@ function registerUser(user) {
 function loginUser(user) {
   const email = document.querySelector(".email");
   const password = document.querySelector(".passwd");
-
-  console.log(email.value);
-  console.log(password.value);
-
-  if ()
 }
