@@ -129,6 +129,21 @@ html {
 header {
   width: 100%;
 }
+@media screen and (max-width: 950px) {
+  .kuva{
+    position: fixed;
+    display: block;
+    left: 70%;
+    top: 80%;
+
+  }
+
+}
+.kuva{
+  display: none;
+  width: 100px;
+  height: 100px;
+}
 
 nav {
   -webkit-animation: swipeFromRight 0.5s ease-in;
