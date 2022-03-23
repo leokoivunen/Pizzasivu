@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="assets/scss/components/contact/contact.css" />
     <link rel="stylesheet" href="assets/scss/components/all/components.css" />
     <link rel="stylesheet" href="assets/scss/index.css" />
+    <link rel="stylesheet" href="assets/scss/components/feedback/feedback.scss" />
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="assets/iconpack/favicon.png" />
     <link
       rel="stylesheet"
@@ -44,18 +46,12 @@
             <div class="cart_login">
               <a href="kirjautumis.html" class="login">
                 <i class="fa-solid fa-user"></i>
-                <span id="profile">Kirjaudu sisään</span>
+                Kirjaudu sisään
               </a>
               <a href="#" class="cart">
                 <i class="fa-solid fa-bag-shopping"></i>
                 Yhteenveto: <span class="total_price">0,00</span> €
               </a>
-            </div>
-          </div>
-
-          <div class="col-3">
-            <div class="cart_logout">
-              <a href="#">Kirjaudu ulos</a>
             </div>
           </div>
         </div>
@@ -65,14 +61,19 @@
         <div class="alignment">
           <div class="col-1">
             <div class="text-wrapper">
-              <h2 class="sub_title">Ota meihin yhteyttä</h2>
+              <h2 class="sub_title">Palaute</h2>
             </div>
 
             <form action="POST" data-netlify="true">
               <div class="form-container">
                 <div class="flex">
                   <div class="field">
-                    <label for="name">Nimi</label>
+                    <label for="name">Etunimi</label>
+                    <br />
+                    <input type="text" name="name" id="name" required />
+                  </div>
+                  <div class="field">
+                    <label for="name">Sukunimi</label>
                     <br />
                     <input type="text" name="name" id="name" required />
                   </div>
@@ -83,10 +84,27 @@
                   </div>
                 </div>
                 <div class="field">
-                  <label for="message">Viesti</label>
+                  <label for="message">Palautteesi</label>
                   <br />
                   <textarea type="text" name="message" id="message" required></textarea>
                 </div>
+                <br>
+                <div class="field">
+                    <label for="message">Piditkö Netmorista?</label>
+                </div>
+                <fieldset class="rating">
+                    <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                    <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                    <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                    <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                    <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+                    <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                    <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                    <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                    <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+                    <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                </fieldset>
+                <br>
                 <div class="field" id="netlify">
                   <div data-netlify-recaptcha="true"></div>
                 </div>
@@ -98,31 +116,36 @@
       </main>
       <footer class="footer">
         <div class="alignment">
-          <div class="col-1">
+          <div class="col-2">
             <div class="div">
               <p>
-                <i class="fa-solid fa-phone"></i>
-                <span> +358 84 919 289 000</span>
+                <span> TIETOA MEISTÄ</span>
                 <br />
-                Ota yhteyttä meihin
+                Keravalainen pizzeria yritys, jossa valmistamme hyvää ja laadukasta pizzaa.
               </p>
             </div>
 
             <div class="div">
               <p>
-                <i class="fa-solid fa-location"></i>
-                <span> Kerava</span>
+                <span> PALVELUT</span>
                 <br />
-                Tuusulantie, 04200 Kerava
+                Paisto
+                <br />
+                Toimitus
+                <br />
+                Laadukasta safkaa
               </p>
             </div>
 
             <div class="div">
               <p>
-                <i class="fa-solid fa-clock"></i>
-                <span> Avoinna Ma - Su</span>
+                <span> OTA YHTEYTTÄ MEIHIN</span>
                 <br />
-                12:00 - 18:00
+                <i class="fa-solid fa-location"></i> Tuusulantie, 04200 Kerava
+                <br />
+                <i class="fa-solid fa-phone"></i> +358 84 919 289 000
+                <br />
+                <i class="fa-solid fa-envelope"></i> support@netmor.fi
               </p>
             </div>
           </div>
@@ -130,16 +153,5 @@
       </footer>
       <script src="assets/js/menu.js"></script>
     </header>
-    <script>
-      window.addEventListener("DOMContentLoaded", (event) => {
-        let userProfile = document.getElementById("profile");
-        
-        if (localStorage.getItem("Profile") === null) {
-          userProfile.innerText = "Kirjaudu sisään";
-        } else {
-          userProfile.innerText = localStorage.getItem("Profile");
-        }
-      });
-    </script>
   </body>
 </html>

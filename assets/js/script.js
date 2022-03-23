@@ -20,6 +20,9 @@ function registerUser(user) {
     localStorage.setItem("Email", registered_email.value);
     localStorage.setItem("Password", registered_passwd.value);
     localStorage.setItem("Profile", registered_name);
+    alert("Käyttäjä on rekisteröity!")
+    registerForm.style.display = "none";
+    window.location.href = "https://netmor.netlify.app/index.html";
   } else {
     alert("Salasanan vahvistus on epäonnistunut");
   }
@@ -34,6 +37,7 @@ function loginUser(user) {
 
   if (login_email.value === stored_email && login_passwd.value === stored_passwd) {
     alert("Olet kirjautunut sisään!");
+    loginForm.style.display = "none";
   } else {
     alert("Salasana tai sähköposti on väärä.");
   }
@@ -52,5 +56,15 @@ function showLoginForm(user) {
 }
 
 window.addEventListener("DOMContentLoaded", (event) => {
-  userProfile.innerText = localStorage.getItem("Profile")
+  if (localStorage.getItem("Profile") === null) {
+    userProfile.innerText = "Kirjaudu sisään";
+  } else {
+    userProfile.innerText = localStorage.getItem("Profile");
+  }
 });
+
+function logout() {
+  let logoutButton = document.getElementById("logout-form")
+  logoutButton.style.display = "none";
+  userProfile.innerText = localStorage.setItem("Profile", "kirjaudu sisään" );
+}

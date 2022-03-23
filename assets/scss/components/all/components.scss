@@ -3,9 +3,8 @@
   top: 0;
   background-color: #121618e0;
   .alignment {
-    // background-color: red;
     margin: 0 auto;
-    max-width: 70%;
+    max-width: 69.3%;
     display: flex;
     justify-content: space-between;
     .col-1 {
@@ -84,6 +83,26 @@
         }
       }
     }
+
+    .col-3 {
+      // background-color: orange;
+      z-index: 2;
+      padding: 0.5rem;
+      display: inline-flex;
+
+      .cart_logout {
+        display: flex;
+        align-items: center;
+        a {
+          color: #0f0f0f;
+          font-weight: bold;
+          font-size: 1rem;
+          text-decoration: none;
+          background-color: #fff1d6;
+          padding: 1rem 1.35rem;
+        }
+      }
+    }
   }
 }
 
@@ -131,7 +150,6 @@
       margin: 0 auto;
       max-width: 73.5%;
       display: flex;
-      justify-content: center;
       flex-direction: row;
 
       .div {
@@ -140,17 +158,17 @@
 
         p {
           max-width: 20.5rem;
+          line-height: 1.8;
           font-weight: normal;
-          color: rgb(70, 61, 41);
+          color: rgb(32, 29, 22);
 
           i {
-            color: #1a1917;
+            color: rgb(83, 59, 32);
           }
 
           span {
-            font-weight: normal;
+            font-weight: bold;
             color: black;
-            font-size: 1.25rem;
           }
         }
       }

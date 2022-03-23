@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="assets/scss/components/home/home.css" />
     <link rel="stylesheet" href="assets/scss/components/all/components.css" />
     <link rel="stylesheet" href="assets/scss/index.css" />
-
     <link rel="shortcut icon" type="image/png" href="assets/iconpack/favicon.png" />
     <link
       rel="stylesheet"
@@ -21,6 +20,10 @@
   </head>
   <body>
     <header>
+      <!-- <div class="loader">
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_q1m13dtr.json" background="transparent" speed="1" style="width: 300px; height: 300px" loop controls autoplay></lottie-player>
+      </div> -->
       <div class="overlay"></div>
       <nav class="navbar">
         <div class="alignment">
@@ -42,16 +45,24 @@
             </div>
           </div>
 
+          <div class="nav_menu"></div>
+
           <div class="col-2">
             <div class="cart_login">
               <a href="kirjautumis.html" class="login">
                 <i class="fa-solid fa-user"></i>
-                Kirjaudu sisään
+                <span id="profile">Kirjaudu sisään</span>
               </a>
               <a href="#" class="cart">
                 <i class="fa-solid fa-bag-shopping"></i>
                 Yhteenveto: <span class="total_price">0,00</span> €
               </a>
+            </div>
+          </div>
+
+          <div class="col-3" id="logout-form">
+            <div class="cart_logout">
+              <a href="#" id="logout">Kirjaudu ulos</a>
             </div>
           </div>
         </div>
@@ -61,52 +72,29 @@
         <div class="alignment">
           <div class="col-1">
             <div class="text-wrapper">
-              <h2 class="sub_title">Hei, tule syömään netmoriin, tarjoamme asiakkailemme mainion maku kokemuksen ja meiltä saat makua elämään.</h2>
+              <h2 class="sub_title">Tule syömään meille tarjoamme asiakkailemme täydellisen maku kokemuksen ja meiltä saat makua elämään.</h2>
             </div>
 
             <div class="btn-wrapper">
               <a href="ruokalista.html" class="button important"><i class="fa-solid fa-pizza-slice"></i> Ruokalista</a>
-              <a href="#" onclick="alert(`Arkipäivisin auki: klo 12:00 - 18:00`)" class="button"
-                ><i class="fa-solid fa-arrow-right-long"></i> Aukioloajat</a
-              >
+              <a href="#" onclick="alert(`Auki: (Ma - Su): klo 12:00 - 18:00`)" class="button"><i class="fa-solid fa-arrow-right-long"></i> Aukioloajat</a>
             </div>
           </div>
         </div>
       </main>
-
-      <footer class="footer">
-        <div class="alignment">
-          <div class="col-1">
-            <div class="div">
-              <p>
-                <i class="fa-solid fa-phone"></i>
-                <span> +358 84 919 289 000</span>
-                <br />
-                Ota yhteyttä meihin
-              </p>
-            </div>
-
-            <div class="div">
-              <p>
-                <i class="fa-solid fa-location"></i>
-                <span> Kerava</span>
-                <br />
-                Tuusulantie, 04200 Kerava
-              </p>
-            </div>
-
-            <div class="div">
-              <p>
-                <i class="fa-solid fa-clock"></i>
-                <span> Avoinna Ma - Su</span>
-                <br />
-                12:00 - 18:00
-              </p>
-            </div>
-          </div>
-        </div>
-      </footer>
     </header>
     <script src="assets/js/menu.js"></script>
+
+    <script>
+      window.addEventListener("DOMContentLoaded", (event) => {
+        let userProfile = document.getElementById("profile");
+
+        if (localStorage.getItem("Profile") === null) {
+          userProfile.innerText = "Kirjaudu sisään";
+        } else {
+          userProfile.innerText = localStorage.getItem("Profile");
+        }
+      });
+    </script>
   </body>
 </html>

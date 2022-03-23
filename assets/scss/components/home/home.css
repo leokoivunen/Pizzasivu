@@ -1,5 +1,5 @@
 .main .alignment {
-  margin: 10vw auto;
+  margin: 12vw auto;
   max-width: 70%;
   padding: 1rem;
   display: -webkit-box;
@@ -23,7 +23,7 @@
 }
 
 .main .alignment .col-1 .btn-wrapper {
-  margin: 2rem 0;
+  margin: 3rem 0;
 }
 
 .main .alignment .col-1 .btn-wrapper .button {

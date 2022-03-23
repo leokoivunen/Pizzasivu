@@ -44,12 +44,18 @@
             <div class="cart_login">
               <a href="kirjautumis.html" class="login">
                 <i class="fa-solid fa-user"></i>
-                Kirjaudu sisään
+                <span id="profile">Kirjaudu sisään</span>
               </a>
               <a href="#" class="cart">
                 <i class="fa-solid fa-bag-shopping"></i>
                 Yhteenveto: <span class="total_price">0,00</span> €
               </a>
+            </div>
+          </div>
+
+          <div class="col-3">
+            <div class="cart_logout">
+              <a href="#">Kirjaudu ulos</a>
             </div>
           </div>
         </div>
@@ -79,7 +85,7 @@
               <p>
                 <span> TIETOA MEISTÄ</span>
                 <br />
-                Kaukana, sanan vuoret takana, kaukana maista Vokalia ja Consonantia, siellä elävät sokeat tekstit.
+                Keravalainen pizzeria yritys, jossa valmistamme hyvää ja laadukasta pizzaa.
               </p>
             </div>
 
@@ -111,5 +117,16 @@
       </footer>
       <script src="assets/js/menu.js"></script>
     </header>
+    <script>
+      window.addEventListener("DOMContentLoaded", (event) => {
+        let userProfile = document.getElementById("profile");
+        
+        if (localStorage.getItem("Profile") === null) {
+          userProfile.innerText = "Kirjaudu sisään";
+        } else {
+          userProfile.innerText = localStorage.getItem("Profile");
+        }
+      });
+    </script>
   </body>
 </html>
