@@ -9,6 +9,35 @@ html {
   animation: fadeInAnimation ease 0.5s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+  transition: 0.5s;
+}
+
+@keyframes swipeFromRight {
+  from {
+    transform: translateX(250px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes swipeFromLeft {
+  from {
+    transform: translateX(-300px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    font-size: 7rem;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeInAnimation {
@@ -47,6 +76,17 @@ header {
   width: 100%;
 }
 
+nav {
+  animation: swipeFromRight 0.5s ease-in;
+}
+
+main {
+  animation: swipeFromLeft 1s ease-in;
+  .sub_title {
+    animation: fadeIn 0.8s ease-in;
+  }
+}
+
 @media screen and (max-width: 950px) {
   header {
     .navbar {
@@ -72,7 +112,6 @@ header {
         .col-2 {
           .cart_login {
             .login {
-              display: none;
               margin: 0;
             }
 

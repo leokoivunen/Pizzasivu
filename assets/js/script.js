@@ -37,6 +37,7 @@ function loginUser(user) {
 
   if (login_email.value === stored_email && login_passwd.value === stored_passwd) {
     alert("Olet kirjautunut sisään!");
+    loginForm.style.display = "none";
   } else {
     alert("Salasana tai sähköposti on väärä.");
   }
