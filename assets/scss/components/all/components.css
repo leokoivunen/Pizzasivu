@@ -135,6 +135,7 @@
 }
 
 .navbar .alignment .col-3 .cart_logout a {
+  display: none;
   color: #0f0f0f;
   font-weight: bold;
   font-size: 1rem;
