@@ -63,6 +63,19 @@ html {
 header {
   width: 100%;
 }
+@media screen and (max-width: 950px) {
+  .kuva{
+    position: relative;
+    display: block;
+    left: 90%;
+  }
+
+}
+.kuva{
+  display: none;
+  width: 100px;
+  height: 100px;
+}
 
 @media screen and (max-width: 950px) {
   header .navbar .alignment {
