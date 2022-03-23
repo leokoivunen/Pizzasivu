@@ -117,19 +117,30 @@
   color: #ffdd9d;
 }
 
-.navbar .alignment .nav_menu {
+.navbar .alignment .col-3 {
   z-index: 2;
   padding: 0.5rem;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+}
+
+.navbar .alignment .col-3 .cart_logout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.navbar .alignment .nav_menu .gg-menu-grid-o {
-  color: white;
+.navbar .alignment .col-3 .cart_logout a {
+  color: #0f0f0f;
+  font-weight: bold;
+  font-size: 1rem;
+  text-decoration: none;
+  background-color: #fff1d6;
+  padding: 1rem 1.35rem;
 }
 
 .footer {
