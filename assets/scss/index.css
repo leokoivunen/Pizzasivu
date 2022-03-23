@@ -12,6 +12,72 @@ html {
           animation-iteration-count: 1;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+@-webkit-keyframes swipeFromRight {
+  from {
+    -webkit-transform: translateX(250px);
+            transform: translateX(250px);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes swipeFromRight {
+  from {
+    -webkit-transform: translateX(250px);
+            transform: translateX(250px);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes swipeFromLeft {
+  from {
+    -webkit-transform: translateX(-300px);
+            transform: translateX(-300px);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes swipeFromLeft {
+  from {
+    -webkit-transform: translateX(-300px);
+            transform: translateX(-300px);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    font-size: 7rem;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    font-size: 7rem;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes fadeInAnimation {
@@ -62,6 +128,21 @@ html {
 
 header {
   width: 100%;
+}
+
+nav {
+  -webkit-animation: swipeFromRight 0.5s ease-in;
+          animation: swipeFromRight 0.5s ease-in;
+}
+
+main {
+  -webkit-animation: swipeFromLeft 1s ease-in;
+          animation: swipeFromLeft 1s ease-in;
+}
+
+main .sub_title {
+  -webkit-animation: fadeIn 0.8s ease-in;
+          animation: fadeIn 0.8s ease-in;
 }
 
 @media screen and (max-width: 950px) {
