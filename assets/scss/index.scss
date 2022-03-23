@@ -106,6 +106,14 @@ main {
             .list_ordered {
               display: none;
             }
+
+            .kuva{
+              position: fixed;
+              display: block;
+              left: 70%;
+              top: 80%;
+          
+            }
           }
         }
 
@@ -186,4 +194,10 @@ main {
       }
     }
   }
+}
+
+.kuva{
+  display: none;
+  width: 100px;
+  height: 100px;
 }
