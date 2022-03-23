@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="assets/scss/components/home/home.css" />
     <link rel="stylesheet" href="assets/scss/components/all/components.css" />
     <link rel="stylesheet" href="assets/scss/index.css" />
-
+    <link href="https://css.gg/menu-grid-o.css" rel="stylesheet" />
     <link rel="shortcut icon" type="image/png" href="assets/iconpack/favicon.png" />
     <link
       rel="stylesheet"
@@ -31,8 +31,6 @@
                 <i class="fa-solid fa-pizza-slice"></i>
               </h1>
             </div>
-            <div class="nav_menu">
-            </div>
             <div class="nav_links">
               <ol class="list_ordered">
                 <li class="list_item"><a href="index.html">Etusivu</a></li>
@@ -43,11 +41,15 @@
             </div>
           </div>
 
+          <div class="nav_menu">
+            <i class="gg-menu-grid-o"></i>
+          </div>
+
           <div class="col-2">
             <div class="cart_login">
               <a href="kirjautumis.html" class="login">
                 <i class="fa-solid fa-user"></i>
-                Kirjaudu sisään
+                <span id="profile">Kirjaudu sisään</span>
               </a>
               <a href="#" class="cart">
                 <i class="fa-solid fa-bag-shopping"></i>
@@ -67,14 +69,24 @@
 
             <div class="btn-wrapper">
               <a href="ruokalista.html" class="button important"><i class="fa-solid fa-pizza-slice"></i> Ruokalista</a>
-              <a href="#" onclick="alert(`Auki: (Ma - Su): klo 12:00 - 18:00`)" class="button"
-                ><i class="fa-solid fa-arrow-right-long"></i> Aukioloajat</a
-              >
+              <a href="#" onclick="alert(`Auki: (Ma - Su): klo 12:00 - 18:00`)" class="button"><i class="fa-solid fa-arrow-right-long"></i> Aukioloajat</a>
             </div>
           </div>
         </div>
       </main>
     </header>
     <script src="assets/js/menu.js"></script>
+
+    <script>
+      window.addEventListener("DOMContentLoaded", (event) => {
+        let userProfile = document.getElementById("profile");
+
+        if (localStorage.getItem("Profile") === null) {
+          userProfile.innerText = "Kirjaudu sisään";
+        } else {
+          userProfile.innerText = localStorage.getItem("Profile");
+        }
+      });
+    </script>
   </body>
 </html>

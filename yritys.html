@@ -44,7 +44,7 @@
             <div class="cart_login">
               <a href="kirjautumis.html" class="login">
                 <i class="fa-solid fa-user"></i>
-                Kirjaudu sisään
+                <span id="profile">Kirjaudu sisään</span>
               </a>
               <a href="#" class="cart">
                 <i class="fa-solid fa-bag-shopping"></i>
@@ -111,5 +111,16 @@
       </footer>
       <script src="assets/js/menu.js"></script>
     </header>
+    <script>
+      window.addEventListener("DOMContentLoaded", (event) => {
+        let userProfile = document.getElementById("profile");
+        
+        if (localStorage.getItem("Profile") === null) {
+          userProfile.innerText = "Kirjaudu sisään";
+        } else {
+          userProfile.innerText = localStorage.getItem("Profile");
+        }
+      });
+    </script>
   </body>
 </html>

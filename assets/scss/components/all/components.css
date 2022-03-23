@@ -42,11 +42,6 @@
   color: #ffdd9d;
 }
 
-.navbar .alignment .col-1 .nav_menu #SvgjsSvg1001 {
-  font-size: 1rem;
-  color: white;
-}
-
 .navbar .alignment .col-1 .nav_links {
   margin: 0 1vw;
 }
@@ -120,6 +115,21 @@
 
 .navbar .alignment .col-2 .cart_login .cart i {
   color: #ffdd9d;
+}
+
+.navbar .alignment .nav_menu {
+  z-index: 2;
+  padding: 0.5rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .alignment .nav_menu .gg-menu-grid-o {
+  color: white;
 }
 
 .footer {

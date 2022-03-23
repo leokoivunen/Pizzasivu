@@ -26,13 +26,6 @@
         }
       }
 
-      .nav_menu {
-        #SvgjsSvg1001 {
-          font-size: 1rem;
-          color: white;
-        }
-      }
-
       .nav_links {
         margin: 0 1vw;
         .list_ordered {
@@ -88,6 +81,17 @@
             color: #ffdd9d;
           }
         }
+      }
+    }
+
+    .nav_menu {
+      // background-color: orange;
+      z-index: 2;
+      padding: 0.5rem;
+      display: inline-flex;
+      align-items: center;
+      .gg-menu-grid-o {
+        color: white;
       }
     }
   }
