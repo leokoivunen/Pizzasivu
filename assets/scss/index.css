@@ -136,13 +136,13 @@ nav {
 }
 
 main {
-  -webkit-animation: swipeFromLeft 1s ease-in;
-          animation: swipeFromLeft 1s ease-in;
+  -webkit-animation: swipeFromLeft .3s ease-in;
+          animation: swipeFromLeft .3s ease-in;
 }
 
 main .sub_title {
-  -webkit-animation: fadeIn 0.8s ease-in;
-          animation: fadeIn 0.8s ease-in;
+  -webkit-animation: fadeIn 0.3s ease-in;
+          animation: fadeIn 0.3s ease-in;
 }
 
 @media screen and (max-width: 950px) {
