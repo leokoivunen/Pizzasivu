@@ -131,9 +131,11 @@ header {
 }
 @media screen and (max-width: 950px) {
   .kuva{
-    position: relative;
+    position: fixed;
     display: block;
-    left: 90%;
+    left: 70%;
+    top: 80%;
+
   }
 
 }
