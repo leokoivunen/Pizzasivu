@@ -122,6 +122,17 @@
         </div>
       </main>
       <script src="assets/js/menu.js"></script>
+      <script>
+        window.addEventListener("DOMContentLoaded", (event) => {
+          let userProfile = document.getElementById("profile");
+  
+          if (localStorage.getItem("Profile") === null) {
+            userProfile.innerText = "Kirjaudu sisään";
+          } else {
+            userProfile.innerText = localStorage.getItem("Profile");
+          }
+        });
+      </script>
     </header>
   </body>
 </html>
