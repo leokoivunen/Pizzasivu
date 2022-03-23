@@ -129,21 +129,6 @@ html {
 header {
   width: 100%;
 }
-@media screen and (max-width: 950px) {
-  .kuva{
-    position: fixed;
-    display: block;
-    left: 70%;
-    top: 80%;
-
-  }
-
-}
-.kuva{
-  display: none;
-  width: 100px;
-  height: 100px;
-}
 
 nav {
   -webkit-animation: swipeFromRight 0.5s ease-in;
@@ -178,6 +163,12 @@ main .sub_title {
   }
   header .navbar .alignment .col-1 .nav_links .list_ordered {
     display: none;
+  }
+  header .navbar .alignment .col-1 .nav_links .kuva {
+    position: fixed;
+    display: block;
+    left: 70%;
+    top: 80%;
   }
   header .navbar .alignment .col-2 .cart_login .login {
     margin: 0;
@@ -238,5 +229,11 @@ main .sub_title {
   header .navbar .alignment {
     max-width: 95%;
   }
+}
+
+.kuva {
+  display: none;
+  width: 100px;
+  height: 100px;
 }
 /*# sourceMappingURL=index.css.map */
