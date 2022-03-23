@@ -34,10 +34,12 @@ function loginUser(user) {
 
   let login_email = document.getElementById("login_email");
   let login_passwd = document.getElementById("login_passwd");
+  let logoutButton = document.getElementById("logout-form")
 
   if (login_email.value === stored_email && login_passwd.value === stored_passwd) {
     alert("Olet kirjautunut sisään!");
     loginForm.style.display = "none";
+    logoutButton.style.display = "block"
   } else {
     alert("Salasana tai sähköposti on väärä.");
   }
