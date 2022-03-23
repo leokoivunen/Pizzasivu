@@ -84,14 +84,23 @@
       }
     }
 
-    .nav_menu {
+    .col-3 {
       // background-color: orange;
       z-index: 2;
       padding: 0.5rem;
       display: inline-flex;
-      align-items: center;
-      .gg-menu-grid-o {
-        color: white;
+
+      .cart_logout {
+        display: flex;
+        align-items: center;
+        a {
+          color: #0f0f0f;
+          font-weight: bold;
+          font-size: 1rem;
+          text-decoration: none;
+          background-color: #fff1d6;
+          padding: 1rem 1.35rem;
+        }
       }
     }
   }

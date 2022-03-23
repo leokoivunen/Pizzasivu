@@ -62,3 +62,9 @@ window.addEventListener("DOMContentLoaded", (event) => {
     userProfile.innerText = localStorage.getItem("Profile");
   }
 });
+
+function logout() {
+  let logoutButton = document.getElementById("logout-form")
+  logoutButton.style.display = "none";
+  userProfile.innerText = localStorage.setItem("Profile", "kirjaudu sisään" );
+}
