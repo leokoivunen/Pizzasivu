@@ -118,6 +118,13 @@ header {
             flex-direction: column;
     max-width: 100%;
   }
+  header .footer .alignment .col-2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 100%;
+  }
   header .fantasia .alignment {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

@@ -12,8 +12,8 @@
 
     .col-1 {
       z-index: 2;
-      padding: 4rem .8rem;
-      max-width: 50%;
+      padding: 2rem .8vw;
+      max-width: 100%;
       float: left;
 
       .text-wrapper {
@@ -24,7 +24,7 @@
         }
 
         .sub_paragraph {
-          margin: 1.25rem 0;
+          margin: 1.25rem .3rem;
           font-size: 1.2rem;
           font-weight: normal;
           color: rgb(255, 246, 218);
@@ -34,7 +34,6 @@
 
     .col-2 {
       float: right;
-      padding: 3rem;
 
       .about_img {
         width: 100%;

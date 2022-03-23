@@ -3,9 +3,8 @@
   top: 0;
   background-color: #121618e0;
   .alignment {
-    // background-color: red;
     margin: 0 auto;
-    max-width: 70%;
+    max-width: 69.3%;
     display: flex;
     justify-content: space-between;
     .col-1 {
@@ -24,6 +23,13 @@
           i {
             color: #ffdd9d;
           }
+        }
+      }
+
+      .nav_menu {
+        #SvgjsSvg1001 {
+          font-size: 1rem;
+          color: white;
         }
       }
 
@@ -131,7 +137,6 @@
       margin: 0 auto;
       max-width: 73.5%;
       display: flex;
-      justify-content: center;
       flex-direction: row;
 
       .div {
@@ -140,17 +145,17 @@
 
         p {
           max-width: 20.5rem;
+          line-height: 1.8;
           font-weight: normal;
-          color: rgb(70, 61, 41);
+          color: rgb(32, 29, 22);
 
           i {
-            color: #1a1917;
+            color: rgb(83, 59, 32);
           }
 
           span {
-            font-weight: normal;
+            font-weight: bold;
             color: black;
-            font-size: 1.25rem;
           }
         }
       }
