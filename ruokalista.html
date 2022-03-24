@@ -5,19 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Pizza nettisivu." />
-    <title>Netmor - Ruokalista</title>
-    <link rel="stylesheet" href="assets/scss/components/foodlist/foodlist.css">
-    <link rel="stylesheet" href="assets/scss/components/all/components.css" />
-    <link rel="stylesheet" href="assets/scss/index.css" />
-
     <link rel="shortcut icon" type="image/png" href="assets/iconpack/favicon.png" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
-      integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <title>Netmor - Ruokalista</title>
+    <link rel="stylesheet" href="assets/scss/styles.css" />
+    <link rel="stylesheet" href="assets/scss/responsive/mediaquery.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" referrerpolicy="no-referrer" />
   </head>
   <body>
     <header>
@@ -26,14 +18,14 @@
         <div class="alignment">
           <div class="col-1">
             <div class="nav_logo">
-              <h1 class="title">
-                NETMOR
-                <i class="fa-solid fa-pizza-slice"></i>
-              </h1>
+              <a href="index.html">
+                <h1 class="title">
+                  NETMOR
+                  <i class="fa-solid fa-pizza-slice"></i></h1
+              ></a>
             </div>
             <div class="nav_links">
               <ol class="list_ordered">
-                <li class="list_item"><a href="index.html">Etusivu</a></li>
                 <li class="list_item"><a href="ruokalista.html">Ruokalista</a></li>
                 <li class="list_item"><a href="yritys.html">Yritys</a></li>
                 <li class="list_item"><a href="yhteystiedot.html">Yhteystiedot</a></li>
@@ -65,12 +57,12 @@
 
       <main class="foodlist">
         <div class="alignment">
-          <div class="col-1">
+          <div class="left-column">
             <div class="menu-container">
               <ol class="list_ordered">
-                <li class="list_item"><a href="#" onclick="showFood()" class="">Pitsat</a></li>
-                <li class="list_item"><a href="#" onclick="showDrinks()" class="">Juomat</a></li>
-                <li class="list_item"><a href="fantasia.html" class="">Fantasia</a></li>
+                <li><a href="#" onclick="showFood()" class="">Pitsat</a></li>
+                <li><a href="#" onclick="showDrinks()" class="">Juomat</a></li>
+                <li><a href="fantasia.html" class="">Fantasia</a></li>
               </ol>
               <div class="food-container">
                 <div class="food_div">
@@ -165,7 +157,7 @@
                 </div>
               </div>
               <div class="drinks-container">
-                <div class="food_div">
+                <div class="drink_div">
                   <img class="img_width" src="assets/iconpack/drinks/drinks-1.webp" alt="americano" />
 
                   <h4 class="food_name">Coca Cola</h4>
@@ -177,7 +169,7 @@
 
                   <input class="amount" type="number" placeholder="0" />
                 </div>
-                <div class="food_div">
+                <div class="drink_div">
                   <img class="img_width" src="assets/iconpack/drinks/drinks-2.webp" alt="americano" />
 
                   <h4 class="food_name">Coca Cola Zero</h4>
@@ -189,7 +181,7 @@
 
                   <input class="amount" type="number" placeholder="0" />
                 </div>
-                <div class="food_div">
+                <div class="drink_div">
                   <img class="img_width" src="assets/iconpack/drinks/drinks-3.webp" alt="americano" />
 
                   <h4 class="food_name">Sprite</h4>
@@ -202,6 +194,7 @@
                 </div>
               </div>
             </div>
+
           </div>
 
           <div class="col-2"></div>
@@ -212,7 +205,7 @@
     <script>
       window.addEventListener("DOMContentLoaded", (event) => {
         let userProfile = document.getElementById("profile");
-        
+
         if (localStorage.getItem("Profile") === null) {
           userProfile.innerText = "Kirjaudu sisään";
         } else {

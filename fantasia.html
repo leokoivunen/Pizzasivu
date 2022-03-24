@@ -5,18 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Pizza nettisivu." />
-    <title>Netmor - Fantasia</title>
-    <link rel="stylesheet" href="assets/scss/components/all/components.css" />
-    <link rel="stylesheet" href="assets/scss/components/fantasia/fantasia.css">
-    <link rel="stylesheet" href="assets/scss/index.css" />
     <link rel="shortcut icon" type="image/png" href="assets/iconpack/favicon.png" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
-      integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <title>Netmor - Fantasia</title>
+    <link rel="stylesheet" href="assets/scss/styles.css" />
+    <link rel="stylesheet" href="assets/scss/responsive/mediaquery.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" referrerpolicy="no-referrer" />
   </head>
   <body>
     <header>
@@ -25,14 +18,14 @@
         <div class="alignment">
           <div class="col-1">
             <div class="nav_logo">
-              <h1 class="title">
-                NETMOR
-                <i class="fa-solid fa-pizza-slice"></i>
-              </h1>
+              <a href="index.html">
+                <h1 class="title">
+                  NETMOR
+                  <i class="fa-solid fa-pizza-slice"></i></h1
+              ></a>
             </div>
             <div class="nav_links">
               <ol class="list_ordered">
-                <li class="list_item"><a href="index.html">Etusivu</a></li>
                 <li class="list_item"><a href="ruokalista.html">Ruokalista</a></li>
                 <li class="list_item"><a href="yritys.html">Yritys</a></li>
                 <li class="list_item"><a href="yhteystiedot.html">Yhteystiedot</a></li>
@@ -62,60 +55,66 @@
         </div>
       </nav>
 
-      <main>
-        <div class="fantasia">
-          <div class="alignment">
-            <div class="col-1">
-              <h2 class="header_title">PIZZA <span>FANTASIA</span></h2>
-              <p class="header_paragraph">Valitse täytteet oman makusi mukaan.</p>
+      <main class="fantasia">
+        <div class="alignment">
+          <div class="left-column">
+            <h2>PIZZA <span>FANTASIA</span></h2>
+            <p>Valitse täytteet oman makusi mukaan.</p>
 
-              <div class="flexbox">
-                <div class="div">
-                  <h3>POHJA</h3>
-                  <div class="select-wrapper">
-                    <select id="pohja">
-                      <option value="medium">Normaali</option>
-                      <option value="extralarge">Gluteeniton</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div class="div">
-                  <h3>KASTIKKEET</h3>
-                  <div class="select-wrapper">
-                    <select id="kastike">
-                      <option value="medium">Ilman</option>
-                      <option value="extralarge">Valkosipuli</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-
-              <div class="taytteet-container">
-                <h3>TÄYTTEET</h3>
+            <div class="flexbox">
+              <div class="div">
+                <h3>POHJA</h3>
                 <div class="select-wrapper">
-                  <ol id="taytteet">
-                    <li><input type="checkbox" /> kinkku</li>
-                    <li><input type="checkbox" /> ananas</li>
-                    <li><input type="checkbox" /> salami</li>
-                    <li><input type="checkbox" /> kana</li>
-                    <li><input type="checkbox" /> sipuli</li>
-                    <li><input type="checkbox" /> aurajuusto + 2€</li>
-                    <li><input type="checkbox" /> pepperoni + 2€</li>
-                    <li><input type="checkbox" /> pekoni + 2€</li>
-                    <li><input type="checkbox" /> kebab + 2€</li>
-                    <li><input type="checkbox" /> juusto + 2€</li>
-                  </ol>
+                  <select id="pohja">
+                    <option value="medium">Normaali</option>
+                    <option value="extralarge">Gluteeniton</option>
+                  </select>
                 </div>
               </div>
 
-              <div class="complete-order">
-                <a href="tilaus.html"><i class="fa-solid fa-shopping-cart"></i> LISÄÄ TILAUKSEEN</a>
+              <div class="div">
+                <h3>KASTIKKEET</h3>
+                <div class="select-wrapper">
+                  <select id="kastike">
+                    <option value="medium">Ilman</option>
+                    <option value="extralarge">Valkosipuli</option>
+                  </select>
+                </div>
               </div>
             </div>
-            <div class="col-2">
-              <img src="assets/iconpack/4.jpg" alt="pizza" class="fantasia_preview" />
+
+            <div class="taytteet-container">
+              <h3>TÄYTTEET</h3>
+              <div class="select-wrapper">
+                <ol id="taytteet">
+                  <li><input type="checkbox" /> kinkku</li>
+                  <li><input type="checkbox" /> ananas</li>
+                  <li><input type="checkbox" /> salami</li>
+                  <li><input type="checkbox" /> kana</li>
+                  <li><input type="checkbox" /> sipuli</li>
+                  <li><input type="checkbox" /> aurajuusto + 2€</li>
+                  <li><input type="checkbox" /> pepperoni + 2€</li>
+                  <li><input type="checkbox" /> pekoni + 2€</li>
+                  <li><input type="checkbox" /> kebab + 2€</li>
+                  <li><input type="checkbox" /> juusto + 2€</li>
+                </ol>
+              </div>
             </div>
+
+            <div class="complete-order">
+              <a href="tilaus.html"><i class="fa-solid fa-shopping-cart"></i> LISÄÄ TILAUKSEEN</a>
+            </div>
+          </div>
+          <div class="col-2">
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player
+              src="https://assets1.lottiefiles.com/packages/lf20_q1m13dtr.json"
+              background="transparent"
+              speed="1"
+              style="width: 80%; height: 100%"
+              loop
+              autoplay
+            ></lottie-player>
           </div>
         </div>
       </main>
@@ -124,7 +123,7 @@
     <script>
       window.addEventListener("DOMContentLoaded", (event) => {
         let userProfile = document.getElementById("profile");
-        
+
         if (localStorage.getItem("Profile") === null) {
           userProfile.innerText = "Kirjaudu sisään";
         } else {

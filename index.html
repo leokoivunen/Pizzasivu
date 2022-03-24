@@ -5,58 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Pizza nettisivu." />
-    <title>Netmor - Etusivu</title>
-    <link rel="stylesheet" href="assets/scss/components/home/home.css" />
-    <link rel="stylesheet" href="assets/scss/components/all/components.css" />
-    <link rel="stylesheet" href="assets/scss/index.css" />
     <link rel="shortcut icon" type="image/png" href="assets/iconpack/favicon.png" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
-      integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <title>Netmor</title>
+    <link rel="stylesheet" href="assets/scss/styles.css" />
+    <link rel="stylesheet" href="assets/scss/responsive/mediaquery.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" referrerpolicy="no-referrer" />
   </head>
-  <body onload="loader()">
-    <div id="loader">
-      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-      <lottie-player controls="none" src="https://assets1.lottiefiles.com/packages/lf20_q1m13dtr.json" background="transparent" speed="1" style="width: 100%; height: 120%" loop controls autoplay></lottie-player>
-    </div>
-
-    <style>
-      #loader {
-        display: none;
-        background-color: white;
-        width: 100%;
-        height: 100%;
-      }
-    </style>
-
+  <body>
     <header>
       <div class="overlay"></div>
       <nav class="navbar">
         <div class="alignment">
           <div class="col-1">
             <div class="nav_logo">
-              <h1 class="title">
-                NETMOR
-                <i class="fa-solid fa-pizza-slice"></i>
-              </h1>
+              <a href="index.html">
+                <h1 class="title">
+                  NETMOR
+                  <i class="fa-solid fa-pizza-slice"></i></h1
+              ></a>
             </div>
+
             <div class="nav_links">
               <ol class="list_ordered">
-                <li class="list_item"><a href="index.html">Etusivu</a></li>
                 <li class="list_item"><a href="ruokalista.html">Ruokalista</a></li>
                 <li class="list_item"><a href="yritys.html">Yritys</a></li>
                 <li class="list_item"><a href="yhteystiedot.html">Yhteystiedot</a></li>
                 <li class="list_item"><a href="palaute.html">Palaute</a></li>
               </ol>
-              <img src="assets/iconpack/icons8-hamburger-menu-128.png" class="kuva">
             </div>
           </div>
-
-          <div class="nav_menu"></div>
 
           <div class="col-2">
             <div class="cart_login">
@@ -81,14 +58,28 @@
 
       <main class="main">
         <div class="alignment">
-          <div class="col-1">
-            <div class="text-wrapper">
-              <h2 class="sub_title">Tule syömään meille tarjoamme asiakkailemme täydellisen maku kokemuksen ja meiltä saat makua elämään.</h2>
+          <div class="left-column">
+            <div class="text-container">
+              <h2>Tule syömään meille tarjoamme asiakkailemme täyteläisen maku kokemuksen ja meiltä saat makua elämään.</h2>
             </div>
 
-            <div class="btn-wrapper">
-              <a href="ruokalista.html" class="button important"><i class="fa-solid fa-pizza-slice"></i> Ruokalista</a>
-              <a href="#" onclick="alert(`Auki: (Ma - Su): klo 12:00 - 18:00`)" class="button"><i class="fa-solid fa-arrow-right-long"></i> Aukioloajat</a>
+            <div class="btn-container">
+              <a href="ruokalista.html" class="important"> <i class="fa-solid fa-pizza-slice"></i> Ruokalista </a>
+              <a href="#" onclick="alert(`Auki: (Ma - Su): klo 12:00 - 18:00`)"> <i class="fa-solid fa-arrow-right-long"></i> Aukioloajat </a>
+            </div>
+          </div>
+
+          <div class="right-column">
+            <div class="img-container">
+              <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+              <lottie-player
+                src="https://assets1.lottiefiles.com/packages/lf20_q1m13dtr.json"
+                background="transparent"
+                speed="1"
+                style="width: 100%; height: 100%"
+                loop
+                autoplay
+              ></lottie-player>
             </div>
           </div>
         </div>
@@ -107,14 +98,17 @@
         }
       });
 
-      loader()
+      loader();
       function loader() {
         let loader = document.getElementById("loader");
         let header = document.querySelector("header");
-        loader.style.display = "block"
+        loader.style.display = "block";
         header.style.display = "none";
 
-        setTimeout(() => {loader.style.display = "none"; header.style.display = "block"}, 4000);
+        setTimeout(() => {
+          loader.style.display = "none";
+          header.style.display = "block";
+        }, 4000);
       }
     </script>
   </body>

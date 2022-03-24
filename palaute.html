@@ -1,138 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Pizza nettisivu." />
-    <title>Netmor - Palaute</title>
-    <link rel="stylesheet" href="assets/scss/components/contact/contact.css" />
-    <link rel="stylesheet" href="assets/scss/components/all/components.css" />
-    <link rel="stylesheet" href="assets/scss/index.css" />
-    <link rel="stylesheet" href="assets/scss/components/feedback/feedback.css" />
-    <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-    <link rel="shortcut icon" type="image/png" href="assets/iconpack/favicon.png" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
-      integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-  <body>
-    <header>
-      <div class="overlay"></div>
-      <nav class="navbar">
-        <div class="alignment">
-          <div class="col-1">
-            <div class="nav_logo">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pizza nettisivu." />
+  <link rel="shortcut icon" type="image/png" href="assets/iconpack/favicon.png" />
+  <title>Netmor - Palaute</title>
+  <link rel="stylesheet" href="assets/scss/styles.css" />
+  <link rel="stylesheet" href="assets/scss/responsive/mediaquery.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" />
+</head>
+
+<body>
+  <header>
+    <div class="overlay"></div>
+    <nav class="navbar">
+      <div class="alignment">
+        <div class="col-1">
+          <div class="nav_logo">
+            <a href="index.html">
               <h1 class="title">
                 NETMOR
                 <i class="fa-solid fa-pizza-slice"></i>
               </h1>
-            </div>
-            <div class="nav_links">
-              <ol class="list_ordered">
-                <li class="list_item"><a href="index.html">Etusivu</a></li>
-                <li class="list_item"><a href="ruokalista.html">Ruokalista</a></li>
-                <li class="list_item"><a href="yritys.html">Yritys</a></li>
-                <li class="list_item"><a href="yhteystiedot.html">Yhteystiedot</a></li>
-                <li class="list_item"><a href="palaute.html">Palaute</a></li>
-              </ol>
-              <img src="assets/iconpack/icons8-hamburger-menu-128.png" class="kuva">
-            </div>
+            </a>
           </div>
 
-          <div class="nav_menu"></div>
-
-          <div class="col-2">
-            <div class="cart_login">
-              <a href="kirjautumis.html" class="login">
-                <i class="fa-solid fa-user"></i>
-                <span id="profile">Kirjaudu sisään</span>
-              </a>
-              <a href="#" class="cart">
-                <i class="fa-solid fa-bag-shopping"></i>
-                Yhteenveto: <span class="total_price">0,00</span> €
-              </a>
-            </div>
-          </div>
-          <div class="col-3" id="logout-form">
-            <div class="cart_logout">
-              <a href="#" id="logout">Kirjaudu ulos</a>
-            </div>
+          <div class="nav_links">
+            <ol class="list_ordered">
+              <li class="list_item"><a href="ruokalista.html">Ruokalista</a></li>
+              <li class="list_item"><a href="yritys.html">Yritys</a></li>
+              <li class="list_item"><a href="yhteystiedot.html">Yhteystiedot</a></li>
+              <li class="list_item"><a href="palaute.html">Palaute</a></li>
+            </ol>
           </div>
         </div>
+
+        <div class="col-2">
+          <div class="cart_login">
+            <a href="kirjautumis.html" class="login">
+              <i class="fa-solid fa-user"></i>
+              <span id="profile">Kirjaudu sisään</span>
+            </a>
+            <a href="#" class="cart">
+              <i class="fa-solid fa-bag-shopping"></i>
+              Yhteenveto: <span class="total_price">0,00</span> €
+            </a>
+          </div>
         </div>
-      </nav>
+        <div class="col-3" id="logout-form">
+          <div class="cart_logout">
+            <a href="#" id="logout">Kirjaudu ulos</a>
+          </div>
+        </div>
+      </div>
+      </div>
+    </nav>
 
-      <main class="main">
-        <div class="alignment">
-          <div class="col-1">
-            <div class="text-wrapper">
-              <h2 class="sub_title">Palaute</h2>
-            </div>
+    <main class="feedback">
+      <div class="alignment">
+        <div class="left-column">
+          <div class="text-container">
+            <h2>Palaute</h2>
+          </div>
 
-            <form action="POST">
-              <div class="form-container">
-                <div class="flex">
-                  <div class="field">
-                    <label for="name">Etunimi</label>
-                    <br />
-                    <input type="text" name="name" id="name" required />
-                  </div>
-                  <div class="field">
-                    <label for="name">Sukunimi</label>
-                    <br />
-                    <input type="text" name="name" id="name" required />
-                  </div>
-                  <div class="field">
-                    <label for="email">Sähköposti</label>
-                    <br />
-                    <input type="email" name="email" id="email" required />
-                  </div>
-                </div>
+          <form action="POST">
+            <div class="form-container">
+              <div class="flex">
                 <div class="field">
-                  <label for="message">Palautteesi</label>
+                  <label for="name">Etunimi</label>
                   <br />
-                  <textarea type="text" name="message" id="message" required></textarea>
+                  <input type="text" name="name" id="name" required />
                 </div>
-                <br>
                 <div class="field">
-                    <label for="message">Piditkö Netmorista?</label>
+                  <label for="name">Sukunimi</label>
+                  <br />
+                  <input type="text" name="name" id="name" required />
                 </div>
-                <div class="rating">
-                    <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
-                    <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
-                    <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
-                    <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
-                    <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
-                    <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
-                    <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
-                    <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
-                    <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
-                    <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                <div class="field">
+                  <label for="email">Sähköposti</label>
+                  <br />
+                  <input type="email" name="email" id="email" required />
                 </div>
-                <br></br><br></br>
-                <input type="submit" value="Lähetä" />
               </div>
-            </form>
+              <div class="field">
+                <label for="message">Palautteesi</label>
+                <br />
+                <textarea type="text" name="message" id="message" required></textarea>
+              </div>
+              <br>
+              <div class="field">
+                <label for="message">Piditkö Netmorista?</label>
+              </div>
+              <div class="rating">
+                <input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5" title="Awesome - 5 stars"></label>
+                <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                <input type="radio" id="star4" name="rating" value="4" /><label class="full" for="star4" title="Pretty good - 4 stars"></label>
+                <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                <input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3" title="Meh - 3 stars"></label>
+                <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                <input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+                <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                <input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1" title="Sucks big time - 1 star"></label>
+                <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+              </div>
+              <br></br><br></br>
+              <input type="submit" value="Lähetä" />
+            </div>
+          </form>
+        </div>
+
+        <div class="right-column">
+          <div class="img-container">
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_fagxlpah.json" background="transparent" speed="1" style="width: 100%; height: 100%" loop autoplay>
+            </lottie-player>
           </div>
         </div>
-      </main>
-      <script src="assets/js/menu.js"></script>
-      <script>
-        window.addEventListener("DOMContentLoaded", (event) => {
-          let userProfile = document.getElementById("profile");
-  
-          if (localStorage.getItem("Profile") === null) {
-            userProfile.innerText = "Kirjaudu sisään";
-          } else {
-            userProfile.innerText = localStorage.getItem("Profile");
-          }
-        });
-      </script>
-    </header>
-  </body>
+      </div>
+    </main>
+    <script src="assets/js/menu.js"></script>
+    <script>
+      window.addEventListener("DOMContentLoaded", (event) => {
+        let userProfile = document.getElementById("profile");
+
+        if (localStorage.getItem("Profile") === null) {
+          userProfile.innerText = "Kirjaudu sisään";
+        } else {
+          userProfile.innerText = localStorage.getItem("Profile");
+        }
+      });
+    </script>
+  </header>
+</body>
+
 </html>

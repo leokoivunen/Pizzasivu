@@ -5,18 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Pizza nettisivu." />
-    <title>Netmor - Tilaus</title>
-    <link rel="stylesheet" href="assets/scss/components/order/order.css">
-    <link rel="stylesheet" href="assets/scss/components/all/components.css">
-    <link rel="stylesheet" href="assets/scss/index.css" />
     <link rel="shortcut icon" type="image/png" href="assets/iconpack/favicon.png"/>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
-      integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <title>Netmor - Tilaus</title>
+    <link rel="stylesheet" href="assets/scss/styles.css" />
+    <link rel="stylesheet" href="assets/scss/responsive/mediaquery.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" referrerpolicy="no-referrer" />
+
   </head>
   <body>
     <header>
@@ -25,17 +19,18 @@
         <div class="alignment">
           <div class="col-1">
             <div class="nav_logo">
-              <h1 class="title">
-                NETMOR
-                <i class="fa-solid fa-pizza-slice"></i>
-              </h1>
+              <a href="index.html">
+                <h1 class="title">
+                  NETMOR
+                  <i class="fa-solid fa-pizza-slice"></i></h1
+              ></a>
             </div>
             <div class="nav_links">
               <ol class="list_ordered">
-                <li class="list_item"><a href="index.html">Etusivu</a></li>
                 <li class="list_item"><a href="ruokalista.html">Ruokalista</a></li>
                 <li class="list_item"><a href="yritys.html">Yritys</a></li>
                 <li class="list_item"><a href="yhteystiedot.html">Yhteystiedot</a></li>
+                <li class="list_item"><a href="palaute.html">Palaute</a></li>
               </ol>
             </div>
           </div>
@@ -55,29 +50,25 @@
         </div>
       </nav>
 
-      <main>
-        <div class="prosessi">
-          <div class="alignment">
-            <div class="column">
-              <h2 class="header_title">Hei, <span>haluatko</span> kotiinkuljetuksen vai tuletko noutaa pizzan meiltä?</h2>
-
-              <div class="wrapper">
-                <div class="div">
-                  <a onclick="showForm()">Kuljetus</a>
-                  <a onclick="console.log('nouda pizza');">Nouto</a>
-                </div>
-                <div class="form">
-                  <p class="header_paragraph">Kuljetus sisältää ilmaisen toimituksen.</p>
-                  <input id="address" type="text" placeholder="Syötä toimitusosoite" />
-                  <input type="button" onclick="orderProducts()" value="Tilaa" />
-                </div>
-
-                <div class="kaava_form">
-                  <h3>Pizzan tilausprosessi</h3>
-                  <p><i class="fa-solid fa-pizza-slice"></i> Valmistus: <span id="time">20</span> minuuttia</åp>
-                  <p><i class="fa-solid fa-truck"></i> Toimitus: <span id="time">10</span> minuuttia</h2>
-                  <p><i class="fa-solid fa-hand-holding-dollar"></i> Yhteenveto: <span id="time">30</span> minuuttia</p>
-                </div>
+      <main class="order">
+        <div class="alignment">
+          <div class="left-column">
+            <h2>Haluatko kotiinkuljetuksen vai tuletko noutaa pizzan meiltä?</h2>
+            <div class="wrapper">
+              <div class="div">
+                <a onclick="showForm()">Kuljetus</a>
+                <a onclick="alert('nouda pizza');">Nouto</a>
+              </div>
+              <div class="form">
+                <p class="header_paragraph">Kuljetus sisältää ilmaisen toimituksen.</p>
+                <input id="address" type="text" placeholder="Syötä toimitusosoite" />
+                <input type="button" onclick="orderProducts()" value="Tilaa" />
+              </div>
+              <div class="kaava_form">
+                <h3>Pizzan tilausprosessi</h3>
+                <p><i class="fa-solid fa-pizza-slice"></i> Valmistus: <span id="time">20</span> minuuttia</åp>
+                <p><i class="fa-solid fa-truck"></i> Toimitus: <span id="time">10</span> minuuttia</h2>
+                <p><i class="fa-solid fa-hand-holding-dollar"></i> Yhteenveto: <span id="time">30</span> minuuttia</p>
               </div>
             </div>
           </div>

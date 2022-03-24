@@ -1,0 +1,1524 @@
+@import url(https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+body,
+html {
+  font-family: "Poppins", sans-serif;
+  background-image: url("/assets/iconpack/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.823);
+  height: 100%;
+  -webkit-animation: fadeInAnimation ease 0.5s;
+          animation: fadeInAnimation ease 0.5s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.overlay {
+  background-color: rgba(19, 17, 15, 0.89);
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 1;
+  width: 100%;
+  height: 120rem;
+}
+
+header {
+  width: 100%;
+}
+
+nav {
+  -webkit-animation: swipeFromTop 0.5s ease-in;
+          animation: swipeFromTop 0.5s ease-in;
+}
+
+.navbar {
+  margin: 0;
+  top: 0;
+  background-color: #121618e0;
+}
+
+.navbar .alignment {
+  margin: 0 auto;
+  max-width: 69.3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar .alignment .col-1 {
+  z-index: 2;
+  padding: 0.5rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.navbar .alignment .col-1 .nav_logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .alignment .col-1 .nav_logo .title {
+  color: #ffdd9d;
+  font-weight: normal;
+  font-size: 2.3rem;
+}
+
+.navbar .alignment .col-1 .nav_logo .title i {
+  color: #ffdd9d;
+}
+
+.navbar .alignment .col-1 .nav_links {
+  margin: 0 1vw;
+}
+
+.navbar .alignment .col-1 .nav_links .list_ordered {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  list-style: none;
+}
+
+.navbar .alignment .col-1 .nav_links .list_ordered .list_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .alignment .col-1 .nav_links .list_ordered .list_item a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.926);
+  margin: 1.5rem 0.8rem;
+  font-size: 1.1rem;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.navbar .alignment .col-1 .nav_links .list_ordered .list_item a:hover {
+  color: #ffdd9d;
+  -webkit-transition: 0.12s ease-in;
+  transition: 0.12s ease-in;
+}
+
+.navbar .alignment .col-2 {
+  z-index: 2;
+  padding: 0.5rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.navbar .alignment .col-2 .cart_login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .alignment .col-2 .cart_login .login {
+  color: #fff4e0;
+  font-weight: normal;
+  font-size: 1.15rem;
+  text-decoration: none;
+}
+
+.navbar .alignment .col-2 .cart_login .login i {
+  color: #ffdd9d;
+}
+
+.navbar .alignment .col-2 .cart_login .cart {
+  margin: 0 1.35rem;
+  color: #fff4e0;
+  font-weight: normal;
+  font-size: 1.15rem;
+  text-decoration: none;
+}
+
+.navbar .alignment .col-2 .cart_login .cart i {
+  color: #ffdd9d;
+}
+
+.navbar .alignment .col-3 {
+  z-index: 2;
+  padding: 0.5rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.navbar .alignment .col-3 .cart_logout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .alignment .col-3 .cart_logout a {
+  display: none;
+  color: #0f0f0f;
+  font-weight: bold;
+  font-size: 1rem;
+  text-decoration: none;
+  background-color: #fff1d6;
+  padding: 1rem 1.35rem;
+}
+
+.main .alignment {
+  margin: 10vw auto;
+  max-width: 69.3%;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main .alignment .left-column {
+  -webkit-animation: swipeFromLeft 0.35s ease-in;
+          animation: swipeFromLeft 0.35s ease-in;
+  z-index: 2;
+  max-width: 65%;
+  float: left;
+}
+
+.main .alignment .left-column .text-container {
+  margin: 0 0.6rem;
+}
+
+.main .alignment .left-column .text-container h2 {
+  -webkit-animation: fadeInAnimation 2s ease-in;
+          animation: fadeInAnimation 2s ease-in;
+  font-weight: normal;
+  font-size: clamp(1.5rem, 10vw, 3rem);
+  color: #fff4e0;
+}
+
+.main .alignment .left-column .btn-container {
+  margin: 3rem 0.6rem;
+}
+
+.main .alignment .left-column .btn-container a {
+  -webkit-animation: fadeInAnimation 2.5s ease-in;
+          animation: fadeInAnimation 2.5s ease-in;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  font-size: 1.3rem;
+  margin: 1rem 0.1rem;
+  background-color: #ffdd9d;
+  color: #151515;
+  padding: 0.8rem;
+  -webkit-transition: 0.25s all ease-out;
+  transition: 0.25s all ease-out;
+}
+
+.main .alignment .left-column .btn-container a i {
+  margin-right: 0.5rem;
+}
+
+.main .alignment .left-column .btn-container a:hover {
+  background-color: #ffdd9dde;
+  -webkit-transition: 0.15s ease-in;
+  transition: 0.15s ease-in;
+  color: #151515;
+}
+
+.main .alignment .left-column .btn-container .important {
+  background-color: #00000034;
+  border: solid 0.15rem #ffdd9d;
+  color: #ffdd9d;
+}
+
+.main .alignment .right-column {
+  -webkit-animation: swipeFromRight 0.35s ease-in;
+          animation: swipeFromRight 0.35s ease-in;
+  z-index: 2;
+  max-width: 100%;
+  float: right;
+}
+
+.main .alignment .right-column .img-container lottie-player {
+  -webkit-animation: fadeInAnimation 2.5s ease-in;
+          animation: fadeInAnimation 2.5s ease-in;
+  width: 100% !important;
+  height: auto;
+}
+
+.foodlist {
+  background-color: rgba(10, 10, 10, 0.925);
+  padding: 1rem;
+  margin: 0;
+}
+
+.foodlist .alignment {
+  margin: 2vw auto;
+  max-width: 69.6%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.foodlist .alignment .left-column {
+  -webkit-animation: swipeFromLeft 0.35s ease-in;
+          animation: swipeFromLeft 0.35s ease-in;
+  background-color: rgba(4, 4, 4, 0.028);
+  z-index: 2;
+  float: left;
+  max-width: 85%;
+}
+
+.foodlist .alignment .left-column .menu-container {
+  -webkit-animation: fadeInAnimation 2s ease-in;
+          animation: fadeInAnimation 2s ease-in;
+}
+
+.foodlist .alignment .left-column .menu-container ol {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  list-style: none;
+}
+
+.foodlist .alignment .left-column .menu-container ol li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.foodlist .alignment .left-column .menu-container ol li a {
+  text-decoration: none;
+  color: #ffdd9d;
+  margin: 0 0.15rem;
+  font-size: 1.1rem;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  background-color: #1a19176b;
+  border: solid 0.15rem #ffdd9d;
+  padding: 1rem;
+  -webkit-transition: 0.12s;
+  transition: 0.12s;
+}
+
+.foodlist .alignment .left-column .menu-container ol li .important {
+  background-color: #1a1917;
+  border: solid 0.3rem #1a191721;
+  -webkit-transition: 0.12s;
+  transition: 0.12s;
+}
+
+.foodlist .alignment .left-column .menu-container ol li a:hover {
+  -webkit-transition: 0.12s ease-in;
+  transition: 0.12s ease-in;
+  background-color: #1a1917;
+  border: solid 0.3rem #1a191721;
+}
+
+.foodlist .alignment .left-column .menu-container ol li a:focus {
+  background-color: #1a1917;
+  border: solid 0.3rem #1a191721;
+}
+
+.foodlist .alignment .left-column .menu-container .food-container {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.foodlist .alignment .left-column .menu-container .food-container .food_div {
+  max-width: 60%;
+  background-color: #1b1b189f;
+  padding: 0.5rem;
+  border-radius: 8px;
+  margin: 0.4rem 0.15rem;
+}
+
+.foodlist .alignment .left-column .menu-container .food-container .food_div .food_name {
+  line-height: 1.5;
+  font-weight: normal;
+  font-size: 1.8rem;
+  color: white;
+}
+
+.foodlist .alignment .left-column .menu-container .food-container .food_div .food_paragraph {
+  color: whitesmoke;
+  width: auto;
+  font-size: 1.3rem;
+  line-height: 2;
+}
+
+.foodlist .alignment .left-column .menu-container .food-container .food_div .img_width {
+  float: right;
+  width: 30%;
+}
+
+.foodlist .alignment .left-column .menu-container .food-container .food_div .food_price {
+  color: #ffdd9d;
+  font-size: 1.3rem;
+}
+
+.foodlist .alignment .left-column .menu-container .food-container .food_div .currency {
+  color: #ffe7bc;
+  font-size: 1.3rem;
+}
+
+.foodlist .alignment .left-column .menu-container .food-container .food_div .food_count {
+  color: #f8f4ed;
+  font-size: 1.4rem;
+}
+
+.foodlist .alignment .left-column .menu-container .food-container .food_div .button {
+  text-decoration: none;
+  color: #ffdd9d;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  background-color: #1a19176b;
+  border: solid 0.15rem #5e5e5e29;
+  padding: 0.2rem 0.5rem;
+  -webkit-transition: 0.12s;
+  transition: 0.12s;
+}
+
+.foodlist .alignment .left-column .menu-container .food-container .food_div .amount {
+  color: #ffdd9d;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  background-color: #1a19176b;
+  border: solid 0.15rem #5e5e5e29;
+  padding: 0.2rem 0.5rem;
+  -webkit-transition: 0.12s;
+  transition: 0.12s;
+  font-size: 1.07rem;
+  width: 4rem;
+}
+
+.foodlist .alignment .left-column .menu-container .drinks-container {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.foodlist .alignment .left-column .menu-container .drinks-container .drink_div {
+  max-width: 40rem;
+  background-color: #1b1b189f;
+  padding: 0.5rem;
+  border-radius: 8px;
+  margin: 0.4rem 0.15rem;
+}
+
+.foodlist .alignment .left-column .menu-container .drinks-container .drink_div .food_name {
+  line-height: 1.5;
+  font-weight: normal;
+  font-size: 1.8rem;
+  color: white;
+}
+
+.foodlist .alignment .left-column .menu-container .drinks-container .drink_div .food_paragraph {
+  color: whitesmoke;
+  width: auto;
+  font-size: 1.3rem;
+  line-height: 2;
+}
+
+.foodlist .alignment .left-column .menu-container .drinks-container .drink_div .img_width {
+  float: right;
+  width: 30%;
+}
+
+.foodlist .alignment .left-column .menu-container .drinks-container .drink_div .food_price {
+  color: #ffdd9d;
+  font-size: 1.3rem;
+}
+
+.foodlist .alignment .left-column .menu-container .drinks-container .drink_div .currency {
+  color: #ffe7bc;
+  font-size: 1.3rem;
+}
+
+.foodlist .alignment .left-column .menu-container .drinks-container .drink_div .food_count {
+  color: #f8f4ed;
+  font-size: 1.4rem;
+}
+
+.foodlist .alignment .left-column .menu-container .drinks-container .drink_div .button {
+  text-decoration: none;
+  color: #ffdd9d;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  background-color: #1a19176b;
+  border: solid 0.15rem #5e5e5e29;
+  padding: 0.2rem 0.5rem;
+  -webkit-transition: 0.12s;
+  transition: 0.12s;
+}
+
+.foodlist .alignment .left-column .menu-container .drinks-container .drink_div .amount {
+  color: #ffdd9d;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  background-color: #1a19176b;
+  border: solid 0.15rem #5e5e5e29;
+  padding: 0.2rem 0.5rem;
+  -webkit-transition: 0.12s;
+  transition: 0.12s;
+  font-size: 1.07rem;
+  width: 4rem;
+}
+
+.fantasia {
+  background-color: rgba(10, 10, 10, 0.925);
+  padding: 1rem;
+  margin: 0;
+}
+
+.fantasia .alignment {
+  margin: 2vw auto;
+  max-width: 71%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.fantasia .alignment .left-column {
+  -webkit-animation: swipeFromLeft 0.35s ease-in;
+          animation: swipeFromLeft 0.35s ease-in;
+  z-index: 2;
+  padding: 1em;
+  min-width: 35%;
+  float: left;
+}
+
+.fantasia .alignment .left-column h2 {
+  -webkit-animation: fadeInAnimation 2s ease-in;
+          animation: fadeInAnimation 2s ease-in;
+  font-size: 2.75rem;
+  color: #fdf4f4;
+  font-weight: normal;
+}
+
+.fantasia .alignment .left-column p {
+  font-size: 1.25rem;
+  color: #d4d4d4;
+}
+
+.fantasia .alignment .left-column .flexbox {
+  -webkit-animation: fadeInAnimation 2s ease-in;
+          animation: fadeInAnimation 2s ease-in;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0.5rem 0;
+}
+
+.fantasia .alignment .left-column .flexbox .div {
+  margin: 0.3rem;
+}
+
+.fantasia .alignment .left-column .flexbox .div h3 {
+  font-weight: normal;
+  font-size: 1.4rem;
+  color: #ffdd9d;
+}
+
+.fantasia .alignment .left-column .flexbox .div .select-wrapper {
+  margin: 0.5rem 0;
+}
+
+.fantasia .alignment .left-column .flexbox .div .select-wrapper #pohja {
+  background-color: #ffdd9d;
+  border: solid 0.1rem #0e0e0e;
+  padding: 0.4rem 0.5rem;
+  outline: none;
+  font-size: 0.95rem;
+}
+
+.fantasia .alignment .left-column .flexbox .div .select-wrapper #kastike {
+  background-color: #ffdd9d;
+  border: solid 0.1rem #0e0e0e;
+  padding: 0.4rem 0.5rem;
+  outline: none;
+  font-size: 0.95rem;
+}
+
+.fantasia .alignment .left-column .taytteet-container {
+  margin: 0.3rem;
+}
+
+.fantasia .alignment .left-column .taytteet-container h3 {
+  font-weight: normal;
+  font-size: 1.4rem;
+  color: #ffdd9d;
+}
+
+.fantasia .alignment .left-column .taytteet-container .select-wrapper {
+  margin: 0.5rem 0;
+}
+
+.fantasia .alignment .left-column .taytteet-container .select-wrapper #taytteet {
+  list-style-type: none;
+}
+
+.fantasia .alignment .left-column .taytteet-container .select-wrapper #taytteet li {
+  color: #fff5c6;
+}
+
+.fantasia .alignment .left-column .complete-order {
+  margin: 2rem 0;
+}
+
+.fantasia .alignment .left-column .complete-order a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: #1a1a1a;
+  background-color: #ffdd9d;
+  border: solid 0.15rem #493a1d;
+  padding: 0.5rem 0.6rem;
+  -webkit-transition: 0.4s all ease-in;
+  transition: 0.4s all ease-in;
+}
+
+.fantasia .alignment .left-column .complete-order a:hover {
+  color: #ffdd9d;
+  background-color: #1a1a1a;
+  -webkit-transition: 0.4s all ease-in;
+  transition: 0.4s all ease-in;
+}
+
+.fantasia .alignment .col-2 {
+  float: left;
+  z-index: 2;
+}
+
+.fantasia .alignment .col-2 .fantasia_preview {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation: fadeInAnimation 2s ease-in;
+          animation: fadeInAnimation 2s ease-in;
+}
+
+.order {
+  background-color: rgba(10, 10, 10, 0.925);
+  padding: 1rem;
+  margin: 0;
+}
+
+.order .alignment {
+  margin: 2vw auto;
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.order .alignment .left-column {
+  -webkit-animation: swipeFromLeft 0.35s ease-in;
+          animation: swipeFromLeft 0.35s ease-in;
+  z-index: 2;
+  padding: 1em;
+  max-width: 35%;
+  float: left;
+}
+
+.order .alignment .left-column h2 {
+  font-size: 2.45rem;
+  text-align: center;
+  color: #acacac;
+  font-weight: normal;
+}
+
+.order .alignment .left-column .wrapper .div {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.order .alignment .left-column .wrapper .div a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: #1a1a1a;
+  background-color: #ffdd9d;
+  padding: 0.5rem 0.6rem;
+  -webkit-transition: 0.4s all ease-in;
+  transition: 0.4s all ease-in;
+  border: solid 0.15rem #493a1d;
+}
+
+.order .alignment .left-column .wrapper .div a:hover {
+  color: #ffdd9d;
+  background-color: #1a1a1a;
+  -webkit-transition: 0.4s all ease-in;
+  transition: 0.4s all ease-in;
+}
+
+.order .alignment .left-column .wrapper .form {
+  display: none;
+  text-align: left;
+}
+
+.order .alignment .left-column .wrapper .form input[type="text"] {
+  font-size: 1.2rem;
+  background-color: #222222;
+  padding: 0.3rem;
+  border: none;
+  color: white;
+}
+
+.order .alignment .left-column .wrapper .form input[type="button"] {
+  font-size: 1.2rem;
+  background-color: #ffdd9d;
+  padding: 0.3rem;
+  margin: 0 -0.22rem;
+  border: none;
+  color: #222222;
+  -webkit-transition: 0.4s all ease-in;
+  transition: 0.4s all ease-in;
+}
+
+.order .alignment .left-column .wrapper .form input[type="button"]:hover {
+  font-size: 1.2rem;
+  background-color: #222222;
+  padding: 0.3rem;
+  margin: 0 -0.22rem;
+  border: none;
+  color: #ffdd9d;
+  -webkit-transition: 0.2s all ease-in;
+  transition: 0.2s all ease-in;
+}
+
+.order .alignment .left-column .wrapper .form p {
+  margin: 0.65rem 0;
+  font-size: 1.15rem;
+  color: #d1d1d1;
+}
+
+.order .alignment .left-column .wrapper .form input:hover,
+.order .alignment .left-column .wrapper .form input:focus {
+  outline: none;
+}
+
+.order .alignment .left-column .wrapper .kaava_form {
+  text-align: left;
+  display: none;
+}
+
+.order .alignment .left-column .wrapper .kaava_form h3 {
+  color: #e0e0e0;
+}
+
+.order .alignment .left-column .wrapper .kaava_form p {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: #ffdd9d;
+}
+
+.about {
+  background-color: rgba(10, 10, 10, 0.925);
+  padding: 1rem;
+  margin: 0;
+}
+
+.about .alignment {
+  background-color: rgba(10, 10, 10, 0.253);
+  margin: 10vw auto;
+  max-width: 69.3%;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about .alignment .left-column {
+  -webkit-animation: swipeFromLeft 0.35s ease-in;
+          animation: swipeFromLeft 0.35s ease-in;
+  z-index: 2;
+  max-width: 100%;
+  float: left;
+}
+
+.about .alignment .left-column .text-container h2 {
+  -webkit-animation: fadeInAnimation 2s ease-in;
+          animation: fadeInAnimation 2s ease-in;
+  font-size: 2.2rem;
+  font-weight: normal;
+  color: white;
+}
+
+.about .alignment .left-column .text-container p {
+  -webkit-animation: fadeInAnimation 2s ease-in;
+          animation: fadeInAnimation 2s ease-in;
+  margin: 1.25rem 0.3rem;
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: #fff6da;
+}
+
+.about .alignment .right-column {
+  float: right;
+}
+
+.about .alignment .right-column .img-container img {
+  -webkit-animation: fadeInAnimation 2s ease-in;
+          animation: fadeInAnimation 2s ease-in;
+  width: 100%;
+}
+
+.contact {
+  background-color: rgba(10, 10, 10, 0.808);
+  padding: 0 1rem;
+  margin: 0;
+}
+
+.contact .alignment {
+  margin: 0vw auto;
+  max-width: 69.3%;
+  padding: 8rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact .alignment .left-column {
+  -webkit-animation: swipeFromLeft 0.35s ease-in;
+          animation: swipeFromLeft 0.35s ease-in;
+  z-index: 2;
+  max-width: 100%;
+  float: left;
+}
+
+.contact .alignment .left-column .text-container h2 {
+  -webkit-animation: fadeInAnimation 2s ease-in;
+          animation: fadeInAnimation 2s ease-in;
+  font-size: 2.2rem;
+  font-weight: normal;
+  color: white;
+}
+
+.contact .alignment .left-column form {
+  padding-bottom: 5rem;
+  margin: 1rem 0;
+}
+
+.contact .alignment .left-column form .form-container .flex {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.contact .alignment .left-column form .form-container .flex .field {
+  margin-right: 0.5rem;
+}
+
+.contact .alignment .left-column form .form-container .flex .field label {
+  color: white;
+  font-weight: normal;
+  font-size: 1.45rem;
+}
+
+.contact .alignment .left-column form .form-container .flex .field input {
+  margin: 1em 0;
+  background-color: transparent;
+  padding: 0.8rem 0.4rem;
+  border: solid 0.01rem #908282;
+  color: #e4e4e4;
+  font-size: 1.2rem;
+  width: 100%;
+}
+
+.contact .alignment .left-column form .form-container .flex .field input:focus {
+  outline: 0;
+}
+
+.contact .alignment .left-column form .form-container .field {
+  margin-right: 0.5rem;
+}
+
+.contact .alignment .left-column form .form-container .field label {
+  color: white;
+  font-weight: normal;
+  font-size: 1.45rem;
+}
+
+.contact .alignment .left-column form .form-container .field textarea {
+  font-family: "Poppins", sans-serif;
+  background-color: transparent;
+  padding: 0.8rem 0.4rem;
+  height: 10rem;
+  border: solid 0.01rem #908282;
+  color: white;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.contact .alignment .left-column form .form-container .field textarea:focus {
+  outline: 0;
+}
+
+.contact .alignment .left-column form .form-container #netlify {
+  margin: 2rem 0;
+}
+
+.contact .alignment .left-column form .form-container input[type="submit"] {
+  text-decoration: none;
+  color: #ffdd9d;
+  font-size: 1.15rem;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  background-color: #12110f;
+  border: solid 0.115rem #ffdd9d;
+  padding: 0.7rem 1.5rem;
+  -webkit-transition: 0.1s all ease-in;
+  transition: 0.1s all ease-in;
+}
+
+.contact .alignment .left-column form .form-container input[type="submit"]:hover {
+  background-color: #ffdd9d;
+  color: #12110f;
+  border: solid 0.115rem #ffdd9d;
+  -webkit-transition: 0.05s all ease-in;
+  transition: 0.05s all ease-in;
+}
+
+.contact .alignment .right-column {
+  -webkit-animation: swipeFromRight 0.35s ease-in;
+          animation: swipeFromRight 0.35s ease-in;
+  z-index: 2;
+  max-width: 50%;
+  float: right;
+}
+
+.contact .alignment .right-column .img-container lottie-player {
+  -webkit-animation: fadeInAnimation 2.5s ease-in;
+          animation: fadeInAnimation 2.5s ease-in;
+  width: 80% !important;
+  height: auto;
+}
+
+.loginForm {
+  background-color: rgba(10, 10, 10, 0.808);
+  padding: 0 1rem;
+  margin: 0;
+}
+
+.loginForm .alignment {
+  margin: 0vw auto;
+  max-width: 69.3%;
+  padding: 8rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.loginForm .alignment .left-column {
+  -webkit-animation: swipeFromLeft 0.35s ease-in;
+          animation: swipeFromLeft 0.35s ease-in;
+  z-index: 2;
+  max-width: 100%;
+  float: left;
+}
+
+.loginForm .alignment .left-column .text-container h2 {
+  -webkit-animation: fadeInAnimation 2s ease-in;
+          animation: fadeInAnimation 2s ease-in;
+  font-size: 2.2rem;
+  font-weight: normal;
+  color: white;
+}
+
+.loginForm .alignment .left-column form {
+  padding-bottom: 5rem;
+  margin: 1rem 0;
+}
+
+.loginForm .alignment .left-column form .form-container .flex {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.loginForm .alignment .left-column form .form-container .flex .field {
+  margin-right: 0.5rem;
+}
+
+.loginForm .alignment .left-column form .form-container .flex .field label {
+  color: white;
+  font-weight: normal;
+  font-size: 1.45rem;
+}
+
+.loginForm .alignment .left-column form .form-container .flex .field input {
+  margin: 1em 0;
+  background-color: transparent;
+  padding: 0.8rem 0.4rem;
+  border: solid 0.01rem #908282;
+  color: #e4e4e4;
+  font-size: 1.2rem;
+  width: 100%;
+}
+
+.loginForm .alignment .left-column form .form-container .flex .field input:focus {
+  outline: 0;
+}
+
+.loginForm .alignment .left-column form .form-container .field {
+  margin-right: 0.5rem;
+}
+
+.loginForm .alignment .left-column form .form-container .field label {
+  color: white;
+  font-weight: normal;
+  font-size: 1.45rem;
+}
+
+.loginForm .alignment .left-column form .form-container .field textarea {
+  font-family: "Poppins", sans-serif;
+  background-color: transparent;
+  padding: 0.8rem 0.4rem;
+  height: 10rem;
+  border: solid 0.01rem #908282;
+  color: white;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.loginForm .alignment .left-column form .form-container .field textarea:focus {
+  outline: 0;
+}
+
+.loginForm .alignment .left-column form .form-container #netlify {
+  margin: 2rem 0;
+}
+
+.loginForm .alignment .left-column form .form-container input[type="submit"] {
+  text-decoration: none;
+  color: #ffdd9d;
+  font-size: 1.15rem;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  background-color: #12110f;
+  border: solid 0.115rem #ffdd9d;
+  padding: 0.7rem 1.5rem;
+  -webkit-transition: 0.1s all ease-in;
+  transition: 0.1s all ease-in;
+}
+
+.loginForm .alignment .left-column form .form-container input[type="submit"]:hover {
+  background-color: #ffdd9d;
+  color: #12110f;
+  border: solid 0.115rem #ffdd9d;
+  -webkit-transition: 0.05s all ease-in;
+  transition: 0.05s all ease-in;
+}
+
+.loginForm .alignment .right-column {
+  -webkit-animation: swipeFromRight 0.35s ease-in;
+          animation: swipeFromRight 0.35s ease-in;
+  z-index: 2;
+  max-width: 50%;
+  float: right;
+}
+
+.loginForm .alignment .right-column .img-container lottie-player {
+  -webkit-animation: fadeInAnimation 2.5s ease-in;
+          animation: fadeInAnimation 2.5s ease-in;
+  width: 80% !important;
+  height: auto;
+}
+
+.registerForm {
+  background-color: rgba(10, 10, 10, 0.808);
+  padding: 0 1rem;
+  margin: 0;
+}
+
+.registerForm .alignment {
+  margin: 0vw auto;
+  max-width: 69.3%;
+  padding: 8rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.registerForm .alignment .left-column {
+  -webkit-animation: swipeFromLeft 0.35s ease-in;
+          animation: swipeFromLeft 0.35s ease-in;
+  z-index: 2;
+  max-width: 100%;
+  float: left;
+}
+
+.registerForm .alignment .left-column .text-container h2 {
+  -webkit-animation: fadeInAnimation 2s ease-in;
+          animation: fadeInAnimation 2s ease-in;
+  font-size: 2.2rem;
+  font-weight: normal;
+  color: white;
+}
+
+.registerForm .alignment .left-column form {
+  padding-bottom: 5rem;
+  margin: 1rem 0;
+}
+
+.registerForm .alignment .left-column form .form-container .flex {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.registerForm .alignment .left-column form .form-container .flex .field {
+  margin-right: 0.5rem;
+}
+
+.registerForm .alignment .left-column form .form-container .flex .field label {
+  color: white;
+  font-weight: normal;
+  font-size: 1.45rem;
+}
+
+.registerForm .alignment .left-column form .form-container .flex .field input {
+  margin: 1em 0;
+  background-color: transparent;
+  padding: 0.8rem 0.4rem;
+  border: solid 0.01rem #908282;
+  color: #e4e4e4;
+  font-size: 1.2rem;
+  width: 100%;
+}
+
+.registerForm .alignment .left-column form .form-container .flex .field input:focus {
+  outline: 0;
+}
+
+.registerForm .alignment .left-column form .form-container .field {
+  margin-right: 0.5rem;
+}
+
+.registerForm .alignment .left-column form .form-container .field label {
+  color: white;
+  font-weight: normal;
+  font-size: 1.45rem;
+}
+
+.registerForm .alignment .left-column form .form-container .field input {
+  margin: 1em 0;
+  background-color: transparent;
+  padding: 0.8rem 0.4rem;
+  border: solid 0.01rem #908282;
+  color: #e4e4e4;
+  font-size: 1.2rem;
+  width: 100%;
+}
+
+.registerForm .alignment .left-column form .form-container .field input:focus {
+  outline: 0;
+}
+
+.registerForm .alignment .left-column form .form-container #netlify {
+  margin: 2rem 0;
+}
+
+.registerForm .alignment .left-column form .form-container input[type="submit"] {
+  text-decoration: none;
+  color: #ffdd9d;
+  font-size: 1.15rem;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  background-color: #12110f;
+  border: solid 0.115rem #ffdd9d;
+  padding: 0.7rem 1.5rem;
+  -webkit-transition: 0.1s all ease-in;
+  transition: 0.1s all ease-in;
+}
+
+.registerForm .alignment .left-column form .form-container input[type="submit"]:hover {
+  background-color: #ffdd9d;
+  color: #12110f;
+  border: solid 0.115rem #ffdd9d;
+  -webkit-transition: 0.05s all ease-in;
+  transition: 0.05s all ease-in;
+}
+
+.registerForm .alignment .right-column {
+  -webkit-animation: swipeFromRight 0.35s ease-in;
+          animation: swipeFromRight 0.35s ease-in;
+  z-index: 2;
+  max-width: 50%;
+  float: right;
+}
+
+.registerForm .alignment .right-column .img-container lottie-player {
+  -webkit-animation: fadeInAnimation 2.5s ease-in;
+          animation: fadeInAnimation 2.5s ease-in;
+  width: 80% !important;
+  height: auto;
+}
+
+/****** Style Star Rating Widget *****/
+.rating {
+  border: none;
+  float: left;
+}
+
+.rating > input {
+  display: none;
+}
+
+.rating > label:before {
+  margin: 5px;
+  font-size: 2.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.rating > .half:before {
+  content: "\f089";
+  position: absolute;
+}
+
+.rating > label {
+  color: #ddd;
+  float: right;
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+.rating > input:checked ~ label,
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+  color: #ffd700;
+}
+
+/* hover previous stars in list */
+.rating > input:checked + label:hover,
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label,
+.rating > input:checked ~ label:hover ~ label {
+  color: #ffed85;
+}
+
+.feedback {
+  background-color: rgba(10, 10, 10, 0.808);
+  padding: 0 1rem;
+  margin: 0;
+}
+
+.feedback .alignment {
+  margin: 0vw auto;
+  max-width: 69.3%;
+  padding: 8rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.feedback .alignment .left-column {
+  -webkit-animation: swipeFromLeft 0.35s ease-in;
+          animation: swipeFromLeft 0.35s ease-in;
+  z-index: 2;
+  max-width: 100%;
+  float: left;
+}
+
+.feedback .alignment .left-column .text-container h2 {
+  -webkit-animation: fadeInAnimation 2s ease-in;
+          animation: fadeInAnimation 2s ease-in;
+  font-size: 2.2rem;
+  font-weight: normal;
+  color: white;
+}
+
+.feedback .alignment .left-column form {
+  padding-bottom: 5rem;
+  margin: 1rem 0;
+}
+
+.feedback .alignment .left-column form .form-container .flex {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.feedback .alignment .left-column form .form-container .flex .field {
+  margin-right: 0.5rem;
+}
+
+.feedback .alignment .left-column form .form-container .flex .field label {
+  color: white;
+  font-weight: normal;
+  font-size: 1.45rem;
+}
+
+.feedback .alignment .left-column form .form-container .flex .field input {
+  margin: 1em 0;
+  background-color: transparent;
+  padding: 0.8rem 0.4rem;
+  border: solid 0.01rem #908282;
+  color: #e4e4e4;
+  font-size: 1.2rem;
+  width: 100%;
+}
+
+.feedback .alignment .left-column form .form-container .flex .field input:focus {
+  outline: 0;
+}
+
+.feedback .alignment .left-column form .form-container .field {
+  margin-right: 0.5rem;
+}
+
+.feedback .alignment .left-column form .form-container .field label {
+  color: white;
+  font-weight: normal;
+  font-size: 1.45rem;
+}
+
+.feedback .alignment .left-column form .form-container .field textarea {
+  font-family: "Poppins", sans-serif;
+  background-color: transparent;
+  padding: 0.8rem 0.4rem;
+  height: 10rem;
+  border: solid 0.01rem #908282;
+  color: white;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.feedback .alignment .left-column form .form-container .field textarea:focus {
+  outline: 0;
+}
+
+.feedback .alignment .left-column form .form-container #netlify {
+  margin: 2rem 0;
+}
+
+.feedback .alignment .left-column form .form-container input[type="submit"] {
+  text-decoration: none;
+  color: #ffdd9d;
+  font-size: 1.15rem;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  background-color: #12110f;
+  border: solid 0.115rem #ffdd9d;
+  padding: 0.7rem 1.5rem;
+  -webkit-transition: 0.1s all ease-in;
+  transition: 0.1s all ease-in;
+}
+
+.feedback .alignment .left-column form .form-container input[type="submit"]:hover {
+  background-color: #ffdd9d;
+  color: #12110f;
+  border: solid 0.115rem #ffdd9d;
+  -webkit-transition: 0.05s all ease-in;
+  transition: 0.05s all ease-in;
+}
+
+.feedback .alignment .right-column {
+  -webkit-animation: swipeFromRight 0.35s ease-in;
+          animation: swipeFromRight 0.35s ease-in;
+  z-index: 2;
+  max-width: 50%;
+  float: right;
+}
+
+.feedback .alignment .right-column .img-container lottie-player {
+  -webkit-animation: fadeInAnimation 2.5s ease-in;
+          animation: fadeInAnimation 2.5s ease-in;
+  width: 80% !important;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+@-webkit-keyframes swipeFromRight {
+  from {
+    -webkit-transform: translateX(300px);
+            transform: translateX(300px);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes swipeFromRight {
+  from {
+    -webkit-transform: translateX(300px);
+            transform: translateX(300px);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes swipeFromLeft {
+  from {
+    -webkit-transform: translateX(-300px);
+            transform: translateX(-300px);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes swipeFromLeft {
+  from {
+    -webkit-transform: translateX(-300px);
+            transform: translateX(-300px);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes swipeFromTop {
+  from {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes swipeFromTop {
+  from {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

@@ -5,18 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Pizza nettisivu." />
-    <title>Netmor - Yritys</title>
-    <link rel="stylesheet" href="assets/scss/index.css" />
-    <link rel="stylesheet" href="assets/scss/components/all/components.css" />
-    <link rel="stylesheet" href="assets/scss/components/about/about.css" />
     <link rel="shortcut icon" type="image/png" href="assets/iconpack/favicon.png" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
-      integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <title>Netmor - Yritys</title>
+    <link rel="stylesheet" href="assets/scss/styles.css" />
+    <link rel="stylesheet" href="assets/scss/responsive/mediaquery.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" referrerpolicy="no-referrer" />
   </head>
   <body>
     <header>
@@ -25,14 +18,14 @@
         <div class="alignment">
           <div class="col-1">
             <div class="nav_logo">
-              <h1 class="title">
-                NETMOR
-                <i class="fa-solid fa-pizza-slice"></i>
-              </h1>
+              <a href="index.html">
+                <h1 class="title">
+                  NETMOR
+                  <i class="fa-solid fa-pizza-slice"></i></h1
+              ></a>
             </div>
             <div class="nav_links">
               <ol class="list_ordered">
-                <li class="list_item"><a href="index.html">Etusivu</a></li>
                 <li class="list_item"><a href="ruokalista.html">Ruokalista</a></li>
                 <li class="list_item"><a href="yritys.html">Yritys</a></li>
                 <li class="list_item"><a href="yhteystiedot.html">Yhteystiedot</a></li>
@@ -64,17 +57,17 @@
 
       <main class="about">
         <div class="alignment">
-          <div class="col-1">
-            <div class="text-wrapper">
-              <h2 class="sub_title">Tervetuloa Netmoriin</h2>
-              <p class="sub_paragraph">
-                Olemme keravalainen pizzeria yritys. Valmistamme ruokamme mahdollisimman vastuullisesti ja hyvistä raaka-aineista
-              </p>
+          <div class="left-column">
+            <div class="text-container">
+              <h2>Tervetuloa Netmoriin</h2>
+              <p>Olemme keravalainen pizzeria yritys. Valmistamme ruokamme mahdollisimman vastuullisesti ja hyvistä raaka-aineista</p>
             </div>
           </div>
 
-          <div class="col-2" style="margin-top: -150px;">
-            <img src="assets/iconpack/about.jpg" alt="about" class="about_img" />
+          <div class="right-column">
+            <div class="img-container">
+              <img src="assets/iconpack/about.jpg" alt="restaurant" />
+            </div>
           </div>
         </div>
       </main>
@@ -121,7 +114,7 @@
     <script>
       window.addEventListener("DOMContentLoaded", (event) => {
         let userProfile = document.getElementById("profile");
-        
+
         if (localStorage.getItem("Profile") === null) {
           userProfile.innerText = "Kirjaudu sisään";
         } else {

@@ -28,7 +28,7 @@ let addPizzas = () => {
 
 let showForm = () => {
   let hidden = document.querySelector(".div");
-  let mainTxt = document.querySelector(".header_title");
+  let mainTxt = document.querySelector("h2");
   let form = document.querySelector(".form");
 
   hidden.style.display = "none";

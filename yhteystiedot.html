@@ -5,18 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Pizza nettisivu." />
-    <title>Netmor - Yhteystiedot</title>
-    <link rel="stylesheet" href="assets/scss/components/contact/contact.css" />
-    <link rel="stylesheet" href="assets/scss/components/all/components.css" />
-    <link rel="stylesheet" href="assets/scss/index.css" />
     <link rel="shortcut icon" type="image/png" href="assets/iconpack/favicon.png" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
-      integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <title>Netmor - Yhteystiedot</title>
+    <link rel="stylesheet" href="assets/scss/styles.css" />
+    <link rel="stylesheet" href="assets/scss/responsive/mediaquery.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" referrerpolicy="no-referrer" />
   </head>
   <body>
     <header>
@@ -25,14 +18,14 @@
         <div class="alignment">
           <div class="col-1">
             <div class="nav_logo">
-              <h1 class="title">
-                NETMOR
-                <i class="fa-solid fa-pizza-slice"></i>
-              </h1>
+              <a href="index.html">
+                <h1 class="title">
+                  NETMOR
+                  <i class="fa-solid fa-pizza-slice"></i></h1
+              ></a>
             </div>
             <div class="nav_links">
               <ol class="list_ordered">
-                <li class="list_item"><a href="index.html">Etusivu</a></li>
                 <li class="list_item"><a href="ruokalista.html">Ruokalista</a></li>
                 <li class="list_item"><a href="yritys.html">Yritys</a></li>
                 <li class="list_item"><a href="yhteystiedot.html">Yhteystiedot</a></li>
@@ -62,11 +55,11 @@
         </div>
       </nav>
 
-      <main class="main">
+      <main class="contact">
         <div class="alignment">
-          <div class="col-1">
-            <div class="text-wrapper">
-              <h2 class="sub_title">Ota meihin yhteyttä</h2>
+          <div class="left-column">
+            <div class="text-container">
+              <h2>Ota meihin yhteyttä</h2>
             </div>
 
             <form action="POST" data-netlify="true">
@@ -74,18 +67,15 @@
                 <div class="flex">
                   <div class="field">
                     <label for="name">Nimi</label>
-                    <br />
                     <input type="text" name="name" id="name" required />
                   </div>
                   <div class="field">
                     <label for="email">Sähköposti</label>
-                    <br />
                     <input type="email" name="email" id="email" required />
                   </div>
                 </div>
                 <div class="field">
                   <label for="message">Viesti</label>
-                  <br />
                   <textarea type="text" name="message" id="message" required></textarea>
                 </div>
                 <div class="field" id="netlify">
@@ -95,12 +85,26 @@
               </div>
             </form>
           </div>
+
+          <div class="right-column">
+            <div class="img-container">
+              <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+              <lottie-player
+                src="https://assets1.lottiefiles.com/packages/lf20_9mtff0fv.json"
+                background="transparent"
+                speed="1"
+                style="width: 100%; height: 100%"
+                loop
+                autoplay
+              ></lottie-player>
+            </div>
+          </div>
         </div>
       </main>
       <footer class="footer">
         <div class="alignment">
-          <div class="col-1">
-            <div class="div">
+          <div class="left-column">
+            <div class="section">
               <p>
                 <i class="fa-solid fa-phone"></i>
                 <span> +358 84 919 289 000</span>
@@ -109,7 +113,7 @@
               </p>
             </div>
 
-            <div class="div">
+            <div class="section">
               <p>
                 <i class="fa-solid fa-location"></i>
                 <span> Kerava</span>
@@ -118,7 +122,7 @@
               </p>
             </div>
 
-            <div class="div">
+            <div class="section">
               <p>
                 <i class="fa-solid fa-clock"></i>
                 <span> Avoinna Ma - Su</span>
@@ -134,7 +138,7 @@
     <script>
       window.addEventListener("DOMContentLoaded", (event) => {
         let userProfile = document.getElementById("profile");
-        
+
         if (localStorage.getItem("Profile") === null) {
           userProfile.innerText = "Kirjaudu sisään";
         } else {
