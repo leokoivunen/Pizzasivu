@@ -149,6 +149,27 @@
     max-width: 88%;
     padding: 2rem 0;
   }
+  header .details {
+    padding: 0;
+  }
+  header .details .alingment {
+    margin: 0 auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 84%;
+    padding: 2rem 0;
+  }
+  header .details .alingment .left-column .flex-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .details .alingment .left-column .flex-container .info {
+    margin: .5rem 0;
+  }
 }
 
 @media screen and (max-width: 1500px) {

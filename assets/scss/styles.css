@@ -1247,6 +1247,59 @@ nav {
   height: auto;
 }
 
+.details {
+  background-color: rgba(10, 10, 10, 0.808);
+  padding: 0 1rem;
+  margin: 0;
+}
+
+.details .alingment {
+  margin: 0vw auto;
+  max-width: 69.3%;
+  padding: 5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.details .alingment .left-column {
+  -webkit-animation: swipeFromLeft 0.35s ease-in;
+          animation: swipeFromLeft 0.35s ease-in;
+  z-index: 2;
+  max-width: 100%;
+  float: left;
+}
+
+.details .alingment .left-column .text-container h2 {
+  -webkit-animation: fadeInAnimation 2s ease-in;
+          animation: fadeInAnimation 2s ease-in;
+  font-size: 2.2rem;
+  font-weight: normal;
+  color: white;
+}
+
+.details .alingment .left-column .flex-container {
+  margin: 4rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.details .alingment .left-column .flex-container .info {
+  margin-right: 5rem;
+}
+
 /****** Style Star Rating Widget *****/
 .rating {
   border: none;

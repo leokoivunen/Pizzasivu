@@ -181,6 +181,25 @@
         }
       }
     }
+
+    .details {
+      padding: 0;
+      .alingment {
+        margin: 0 auto;
+        flex-direction: column;
+        max-width: 84%;
+        padding: 2rem 0;
+        .left-column {
+          .flex-container {
+            flex-direction: column;
+
+            .info {
+              margin: .5rem 0;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
