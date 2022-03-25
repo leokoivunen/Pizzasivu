@@ -1300,6 +1300,14 @@ nav {
   margin-right: 5rem;
 }
 
+.details .alingment .left-column .flex-container .info h3 {
+  color: white;
+}
+
+.details .alingment .left-column .flex-container .info p {
+  color: white;
+}
+
 /****** Style Star Rating Widget *****/
 .rating {
   border: none;
